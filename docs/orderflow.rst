@@ -2139,7 +2139,7 @@ reparto.
 
    }
 
-.. |image0| image:: media/image1.png
+.. |image0| image:: media/image1a.png
    :width: 3.07874in
    :height: 0.81102in
 .. |image1| image:: media/image2.emf
