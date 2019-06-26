@@ -5,17 +5,17 @@ FUNCIONALIDAD APIFICACIÓN
 Contenido
 =========
 
-`1. INTRODUCCIÓN 5 <#introducción>`__
+`1. INTRODUCCIÓN 4 <#introducción>`__
 
 `2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
-5 <#flujo-de-creación-de-pedido-básico>`__
+4 <#flujo-de-creación-de-pedido-básico>`__
 
 `3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
-6 <#flujo-de-creación-de-un-pedido-de-kiosco>`__
+5 <#flujo-de-creación-de-un-pedido-de-kiosco>`__
 
-`4. INICIO DE PEDIDO 6 <#inicio-de-pedido>`__
+`4. INICIO DE PEDIDO 5 <#inicio-de-pedido>`__
 
-`5. TIENDAS POR LOCALIZACIÓN 8 <#tiendas-por-localización>`__
+`5. TIENDAS POR LOCALIZACIÓN 7 <#tiendas-por-localización>`__
 
 `6. HORAS DISPONIBLES 9 <#horas-disponibles>`__
 
@@ -60,45 +60,43 @@ Para poder crear un pedido sencillo mediante la Apificación, será
 necesario realizar las llamadas a los servicios en el siguiente orden
 concreto:
 
--  Token e inicio de pedido::
-		POST /connect/token
+-  Token e inicio de pedido
 
--  Obtener tiendas por localización (a recoger) GET
-   /shop/location/{lat}/{lng}
+   -  POST /connect/token
+
+-  Obtener tiendas por localización (a recoger)
+
+   -  GET/shop/location/{lat}/{lng}
 
 -  Obtener horas disponibles
 
-
-   GET /shop/availablehours
+   -  GET /shop/availablehours
 
 -  Obtener catálogo
 
-
-   GET /catalogue/shop/{id}
+   -  GET /catalogue/shop/{id}
 
 -  Creación del pedido
 
-
-   POST /order/create
+   -  POST /order/create
 
 -  Añadir un producto
 
-
-   POST /order/product
+   -  POST /order/product
 
 -  Establecer los datos de reparto
 
+   -  GET /order/getaddress
 
-   GET /order/getaddress
+   -  POST /order/delivery
 
-   POST /order/delivery
+-  Obtener los medios de pago para la tienda
 
--  Obtener los medios de pago para la tienda GET /shop/{id}/payments
+   -  GET /shop/{id}/payments
 
 -  Finalizar el pedido
 
-
-   POST /order/save
+   -  POST /order/save
 
 3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO 
 ============================================
@@ -109,33 +107,28 @@ concreto:
 
 -  Token e inicio de pedido
 
-
-   POST /connect/token
+   -  POST /connect/token
 
 -  Obtener catálogo
 
-
-   GET /catalogue/shop/{ShopId}/{DeliveryType}
+   -  GET /catalogue/shop/{ShopId}/{DeliveryType}
 
 -  Creación del pedido
 
-
-   POST /order/createlocal
+   -  POST /order/createlocal
 
 -  Añadir un producto
 
-
-   POST /order/product
+   -  POST /order/product
 
 -  Finalizar el pedido
 
-
-   POST /order/savelocal
+   -  POST /order/savelocal
 
 4. INICIO DE PEDIDO 
 ====================
 
-   POST /connect/token
+POST /connect/token
 
 Esta llamada se encarga de obtener un token de seguridad para autorizar
 las invocaciones a las llamadas y será obligatorio usarlo en todas las
@@ -167,10 +160,15 @@ de tiempo y dentro del ámbito del pedido en curso.
 Ejemplo de respuesta::
 
    {
+
    "access_token":
+
    "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw",
+
    "expires_in": 3600,
+
    "token_type": "Bearer"
+
    }
 
 5. TIENDAS POR LOCALIZACIÓN 
@@ -203,7 +201,7 @@ La información que devuelve consta del identificador de la tienda que se
 utilizará en consultas posteriores, junto con la dirección de la tienda
 (calle, ciudad y provincia).
 
-   Ejemplo de respuesta:
+Ejemplo de respuesta::
 
    [
 
@@ -267,7 +265,7 @@ utilizará en consultas posteriores, junto con la dirección de la tienda
 
    }
 
-]
+   ]
 
 6. HORAS DISPONIBLES 
 =====================
@@ -382,6 +380,8 @@ podrán haber definidos diferentes tamaños del producto elegibles del
 listado, ingredientes por defecto de cada producto (podrán ser añadidos)
 y diferentes tamaños de masa también elegibles, entre otros campos.
 
+|image1|
+
 ======================== ================================================================================================================================================== ==================================================================================================
 \                        **PRODUCTO**                                                                                                                                      
 ======================== ================================================================================================================================================== ==================================================================================================
@@ -402,8 +402,7 @@ y diferentes tamaños de masa también elegibles, entre otros campos.
                             “Integral” o “QuadRoller”)                                                                                                                     
 ======================== ================================================================================================================================================== ==================================================================================================
 
-
-   Ejemplo de respuesta:
+Ejemplo de respuesta::
 
    {
 
@@ -897,7 +896,7 @@ ingredientes que pueden ser añadidos o no, al producto.
 
 Esta agrupación se podrá utilizar para mostrar en pantalla la
 información de estos ingredientes en listados seleccionables u otros
-contenedores:\ |image1|
+contenedores:\ |image2|
 
 Por ejemplo, si el campo mínimo de ingredientes viene informado con un 0
 y el de máximo de ingredientes con valor 1, se correspondería con un
@@ -915,7 +914,7 @@ máximo con valor 8, implica que son ingredientes opcionales, y como
 máximo se podrán añadir 8 ingredientes en total, 8 del mismo tipo u 8 en
 total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:
 
-|image2|
+|image3|
 
    Ejemplo de respuesta:
 
@@ -1291,6 +1290,7 @@ también otros ingredientes que se pueden ir agregando según una lista.
    **name**     Nombre del ingrediente                                               “SALSA TOMATE Y ORÉGANO”
 =============== ================================================================= ===========================
 
+..
 
    Ejemplo de parámetros de entrada:
 
@@ -1606,6 +1606,7 @@ establecer la dirección de entrega.
                    “POST /connect/token”: token_type + “ ” + access_token                  eyJhbGciOiJodHRwOi8vd3d3…”
 ================== ==================================================================== =============================
 
+..
 
    Los parámetros de salida son:
 
@@ -1626,6 +1627,7 @@ establecer la dirección de entrega.
 **editable**     Si el campo value se puede editar o no (True o False)                True
 ============= ==================================================================== ==========
 
+..
 
    Ejemplo de respuesta:
 
@@ -1985,6 +1987,7 @@ cada uno, son:
    una restricción**. Esta restricción consiste en que solamente se
    puede guardar un único token para este medio de pago por usuario.
 
+..
 
    Esto significa que para saber si el checkbox debe estar disponible
    para el usuario hay que, primero, revisar si dicho usuario tiene
@@ -2004,6 +2007,7 @@ cada uno, son:
    entonces dependiente de que el checkbox esté marcado o desmarcado
    para pasar un True o False respectivamente.
 
+..
 
    Ejemplo de respuesta:
 
@@ -2092,6 +2096,7 @@ kiosco) realizando el pago mediante el medio de pago en concreto.
    **OrderObservations**    Notas de elaboración del pedido                                                                                              
 ======================== ================================================================================================================================ ==========================
 
+..
 
    Ejemplo de parámetros de entrada:
 
@@ -2143,9 +2148,12 @@ reparto.
 .. |image0| image:: media/image1.png
    :width: 3.07874in
    :height: 0.81102in
-.. |image1| image:: media/image2.png
+.. |image1| image:: media/image2.emf
+   :width: 5.90903in
+   :height: 2.35625in
+.. |image2| image:: media/image3.png
    :width: 5.70729in
    :height: 5.40312in
-.. |image2| image:: media/image10.png
+.. |image3| image:: media/image11.png
    :width: 6.93799in
    :height: 4.81285in
