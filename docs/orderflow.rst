@@ -61,41 +61,33 @@ necesario realizar las llamadas a los servicios en el siguiente orden
 concreto:
 
 -  Token e inicio de pedido::
-
-..
-
-   POST /connect/token
+		POST /connect/token
 
 -  Obtener tiendas por localización (a recoger) GET
    /shop/location/{lat}/{lng}
 
 -  Obtener horas disponibles
 
-..
 
    GET /shop/availablehours
 
 -  Obtener catálogo
 
-..
 
    GET /catalogue/shop/{id}
 
 -  Creación del pedido
 
-..
 
    POST /order/create
 
 -  Añadir un producto
 
-..
 
    POST /order/product
 
 -  Establecer los datos de reparto
 
-..
 
    GET /order/getaddress
 
@@ -105,7 +97,6 @@ concreto:
 
 -  Finalizar el pedido
 
-..
 
    POST /order/save
 
@@ -118,31 +109,26 @@ concreto:
 
 -  Token e inicio de pedido
 
-..
 
    POST /connect/token
 
 -  Obtener catálogo
 
-..
 
    GET /catalogue/shop/{ShopId}/{DeliveryType}
 
 -  Creación del pedido
 
-..
 
    POST /order/createlocal
 
 -  Añadir un producto
 
-..
 
    POST /order/product
 
 -  Finalizar el pedido
 
-..
 
    POST /order/savelocal
 
@@ -181,15 +167,10 @@ de tiempo y dentro del ámbito del pedido en curso.
 Ejemplo de respuesta::
 
    {
-
    "access_token":
-
    "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw",
-
    "expires_in": 3600,
-
    "token_type": "Bearer"
-
    }
 
 5. TIENDAS POR LOCALIZACIÓN 
@@ -421,7 +402,6 @@ y diferentes tamaños de masa también elegibles, entre otros campos.
                             “Integral” o “QuadRoller”)                                                                                                                     
 ======================== ================================================================================================================================================== ==================================================================================================
 
-..
 
    Ejemplo de respuesta:
 
@@ -1311,7 +1291,6 @@ también otros ingredientes que se pueden ir agregando según una lista.
    **name**     Nombre del ingrediente                                               “SALSA TOMATE Y ORÉGANO”
 =============== ================================================================= ===========================
 
-..
 
    Ejemplo de parámetros de entrada:
 
@@ -1627,7 +1606,6 @@ establecer la dirección de entrega.
                    “POST /connect/token”: token_type + “ ” + access_token                  eyJhbGciOiJodHRwOi8vd3d3…”
 ================== ==================================================================== =============================
 
-..
 
    Los parámetros de salida son:
 
@@ -1648,7 +1626,6 @@ establecer la dirección de entrega.
 **editable**     Si el campo value se puede editar o no (True o False)                True
 ============= ==================================================================== ==========
 
-..
 
    Ejemplo de respuesta:
 
@@ -2008,7 +1985,6 @@ cada uno, son:
    una restricción**. Esta restricción consiste en que solamente se
    puede guardar un único token para este medio de pago por usuario.
 
-..
 
    Esto significa que para saber si el checkbox debe estar disponible
    para el usuario hay que, primero, revisar si dicho usuario tiene
@@ -2028,7 +2004,6 @@ cada uno, son:
    entonces dependiente de que el checkbox esté marcado o desmarcado
    para pasar un True o False respectivamente.
 
-..
 
    Ejemplo de respuesta:
 
@@ -2117,7 +2092,6 @@ kiosco) realizando el pago mediante el medio de pago en concreto.
    **OrderObservations**    Notas de elaboración del pedido                                                                                              
 ======================== ================================================================================================================================ ==========================
 
-..
 
    Ejemplo de parámetros de entrada:
 
