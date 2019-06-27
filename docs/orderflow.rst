@@ -157,6 +157,7 @@ entrada del resto de llamadas. Este token será válido durante un periodo
 de tiempo y dentro del ámbito del pedido en curso.
 
 Ejemplo de respuesta:
+
 ..code-block:: guess
 
  {
