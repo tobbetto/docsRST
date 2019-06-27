@@ -156,7 +156,8 @@ y se corresponderá con el campo **x-auth-back** en los parámetros de
 entrada del resto de llamadas. Este token será válido durante un periodo
 de tiempo y dentro del ámbito del pedido en curso.
 
-Ejemplo de respuesta:: guess
+Ejemplo de respuesta:
+..code-block:: guess
 
  {
  "access_token":
