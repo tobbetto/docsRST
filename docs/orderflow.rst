@@ -158,7 +158,7 @@ de tiempo y dentro del ámbito del pedido en curso.
 
 Ejemplo de respuesta:
 
-..code-block:: guess
+.. code-block:: guess
 
  {
  "access_token":
