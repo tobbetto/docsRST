@@ -12,6 +12,7 @@ Welcome to techDocTLPZ's documentation!
    
    docs/orderflow
    docs/orderflow_2
+   rst/es_es/technical documentation/orders/Manual de usuario
 
 
 Indices and tables
