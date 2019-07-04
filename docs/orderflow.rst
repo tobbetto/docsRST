@@ -1,38 +1,41 @@
 |image0|
 
 =========================
-FUNCIONALIDAD APIFICACIÓN
+FUNCIONALIDAD APIFICACI0N
 =========================
 
+
 Contenido
-=========
 
-`1. INTRODUCCIÓN <#introduccion>`__
+`1. INTRODUCCIÓN 4 <#introducción>`__
 
-`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO <#flujo-de-creacion-de-pedido-basico>`__
+`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
+4 <#flujo-de-creación-de-pedido-basico>`__
 
-`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO <#flujo-de-creacion-de-un-pedido-de-kiosco>`__
+`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
+5 <#flujo-de-creación-de-un-pedido-de-kiosco>`__
 
-`4. INICIO DE PEDIDO <#inicio-de-pedido>`__
+`4. INICIO DE PEDIDO 5 <#inicio-de-pedido>`__
 
-`5. TIENDAS POR LOCALIZACIÓN <#tiendas-por-localizacion>`__
+`5. TIENDAS POR LOCALIZACIÓN 7 <#tiendas-por-localizacion>`__
 
-`6. HORAS DISPONIBLES <#horas-disponibles>`__
+`6. HORAS DISPONIBLES 9 <#horas-disponibles>`__
 
-`7. OBTENER CATÁLOGO <#obtener-catalogo>`__
+`7. OBTENER CATÁLOGO 10 <#obtener-catálogo>`__
 
-`7.1 Obtener los ingredientes elegibles para un producto <#obtener-los-ingredientes-elegibles-para-un-producto>`__
+`7.1 Obtener los ingredientes elegibles para un producto
+15 <#obtener-los-ingredientes-elegibles-para-un-producto>`__
 
-`8. CREACIÓN DEL PEDIDO <#creacion-del-pedido>`__
+`8. CREACIÓN DEL PEDIDO 21 <#creación-del-pedido>`__
 
-`9. AÑADIR UN PRODUCTO <#anadir-un-producto>`__
+`9. AÑADIR UN PRODUCTO 22 <#añadir-un-producto>`__
 
-`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA <#establecer-una-direccion-de-entrega>`__
+`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
+26 <#establecer-una-dirección-de-entrega>`__
 
-`11. OBTENER MEDIOS DE PAGO <#obtener-medios-de-pago>`__
+`11. OBTENER MEDIOS DE PAGO 29 <#obtener-medios-de-pago>`__
 
-`12. FINALIZAR PEDIDO <#finalizar-pedido>`__
-
+`12. FINALIZAR PEDIDO 31 <#finalizar-pedido>`__
 
    La información que contiene la presente propuesta es propiedad
    exclusiva de Vector ITC Group No está permitida la reproducción de la
@@ -158,14 +161,14 @@ de tiempo y dentro del ámbito del pedido en curso.
 
 Ejemplo de respuesta:
 
-.. code-block:: guess
+.. code-block:: json
 
- {
- "access_token":
- "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw",
- "expires_in": 3600,
- "token_type": "Bearer"
- }
+   {
+   "access_token":
+   "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw",
+   "expires_in": 3600,
+   "token_type": "Bearer"
+   }
 
 5. TIENDAS POR LOCALIZACIÓN 
 ============================
@@ -197,68 +200,45 @@ La información que devuelve consta del identificador de la tienda que se
 utilizará en consultas posteriores, junto con la dirección de la tienda
 (calle, ciudad y provincia).
 
-Ejemplo de respuesta::
+Ejemplo de respuesta:
+
+.. code-block:: json
 
    [
 
    {
-
    "shopId": "00145",
-
    "addresss": "Gertrudis Gómez de Avellaneda",
-
    "city": "ZARAGOZA",
-
    "province": "ZARAGOZA"
-
    },
 
    {
-
    "shopId": "00306",
-
    "addresss": "Sobrarbe 43",
-
    "city": "ZARAGOZA",
-
    "province": "ZARAGOZA"
-
    },
 
    {
-
    "shopId": "00859",
-
    "addresss": "Plaza del Pilar 14",
-
    "city": "ZARAGOZA",
-
    "province": "ZARAGOZA"
-
    },
 
    {
-
    "shopId": "00374",
-
    "addresss": "Paseo María Agustín 9",
-
    "city": "ZARAGOZA",
-
    "province": "ZARAGOZA"
-
    },
 
    {
-
    "shopId": "00834",
-
    "addresss": "Avenida de Madrid 198",
-
    "city": "ZARAGOZA",
-
    "province": "ZARAGOZA"
-
    }
 
    ]
@@ -302,6 +282,8 @@ tiempo de espera entre hora y hora, configurado para la tienda asignada
 a esa localización, o para la tienda indicada.
 
    Ejemplo de respuesta:
+
+.. code-block:: json
 
    {
 
@@ -398,7 +380,9 @@ y diferentes tamaños de masa también elegibles, entre otros campos.
                             “Integral” o “QuadRoller”)                                                                                                                     
 ======================== ================================================================================================================================================== ==================================================================================================
 
-Ejemplo de respuesta::
+Ejemplo de respuesta:
+
+.. code-block:: json
 
    {
 
@@ -890,9 +874,19 @@ ingredientes seleccionables. Estas agrupaciones son una clasificación
 por tipo de ingrediente que permite saber la cantidad mínima y máxima de
 ingredientes que pueden ser añadidos o no, al producto.
 
+   |image2|
+
+   |image3|
+
+   |image4|
+
+|image5|
+
+|image6|
+
 Esta agrupación se podrá utilizar para mostrar en pantalla la
 información de estos ingredientes en listados seleccionables u otros
-contenedores:\ |image2|
+contenedores:
 
 Por ejemplo, si el campo mínimo de ingredientes viene informado con un 0
 y el de máximo de ingredientes con valor 1, se correspondería con un
@@ -910,7 +904,7 @@ máximo con valor 8, implica que son ingredientes opcionales, y como
 máximo se podrán añadir 8 ingredientes en total, 8 del mismo tipo u 8 en
 total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:
 
-|image3|
+|image7|
 
    Ejemplo de respuesta:
 
@@ -2141,15 +2135,27 @@ reparto.
 
    }
 
-.. |image0| image:: media/image1a.png
+.. |image0| image:: media/image1.png
    :width: 3.07874in
    :height: 0.81102in
 .. |image1| image:: media/image2.emf
    :width: 5.90903in
    :height: 2.35625in
-.. |image2| image:: media/image3.png
-   :width: 5.70729in
-   :height: 5.40312in
-.. |image3| image:: media/image11.png
-   :width: 6.93799in
-   :height: 4.81285in
+.. |image2| image:: media/image3.emf
+   :width: 4.77273in
+   :height: 2.22708in
+.. |image3| image:: media/image4.emf
+   :width: 4.83333in
+   :height: 1.15903in
+.. |image4| image:: media/image5.emf
+   :width: 4.83333in
+   :height: 1.15903in
+.. |image5| image:: media/image6.jpg
+   :width: 5.06982in
+   :height: 1.59083in
+.. |image6| image:: media/image7.jpg
+   :width: 5.04761in
+   :height: 2.44054in
+.. |image7| image:: media/image8.jpg
+   :width: 6.29097in
+   :height: 4.19722in

@@ -84,7 +84,6 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">FUNCIONALIDAD APIFICACI0N</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#contenido">Contenido</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#introduccion">1. INTRODUCCIÓN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#flujo-de-creacion-de-pedido-basico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#flujo-de-creacion-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO</a></li>
@@ -167,24 +166,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p><a class="reference internal" href="../_images/image1a.png"><img alt="image0" src="../_images/image1a.png" style="width: 3.07874in; height: 0.81102in;" /></a></p>
+  <p><a class="reference internal" href="../_images/image1.png"><img alt="image0" src="../_images/image1.png" style="width: 3.07874in; height: 0.81102in;" /></a></p>
 <div class="section" id="funcionalidad-apificaci0n">
 <h1>FUNCIONALIDAD APIFICACI0N<a class="headerlink" href="#funcionalidad-apificaci0n" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="contenido">
-<h2>Contenido<a class="headerlink" href="#contenido" title="Enlazar permanentemente con este título">¶</a></h2>
-<p><a class="reference external" href="#introduccion">1. INTRODUCCIÓN</a></p>
-<p><a class="reference external" href="#flujo-de-creacion-de-pedido-basico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO</a></p>
-<p><a class="reference external" href="#flujo-de-creacion-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO</a></p>
-<p><a class="reference external" href="#inicio-de-pedido">4. INICIO DE PEDIDO</a></p>
-<p><a class="reference external" href="#tiendas-por-localizacion">5. TIENDAS POR LOCALIZACIÓN</a></p>
-<p><a class="reference external" href="#horas-disponibles">6. HORAS DISPONIBLES</a></p>
-<p><a class="reference external" href="#obtener-catalogo">7. OBTENER CATÁLOGO</a></p>
-<p><a class="reference external" href="#obtener-los-ingredientes-elegibles-para-un-producto">7.1 Obtener los ingredientes elegibles para un producto</a></p>
-<p><a class="reference external" href="#creacion-del-pedido">8. CREACIÓN DEL PEDIDO</a></p>
-<p><a class="reference external" href="#anadir-un-producto">9. AÑADIR UN PRODUCTO</a></p>
-<p><a class="reference external" href="#establecer-una-direccion-de-entrega">10. ESTABLECER UNA DIRECCIÓN DE ENTREGA</a></p>
-<p><a class="reference external" href="#obtener-medios-de-pago">11. OBTENER MEDIOS DE PAGO</a></p>
-<p><a class="reference external" href="#finalizar-pedido">12. FINALIZAR PEDIDO</a></p>
+<p>Contenido</p>
+<p><a class="reference external" href="#introducción">1. INTRODUCCIÓN 4</a></p>
+<p><a class="reference external" href="#flujo-de-creación-de-pedido-basico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
+4</a></p>
+<p><a class="reference external" href="#flujo-de-creación-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
+5</a></p>
+<p><a class="reference external" href="#inicio-de-pedido">4. INICIO DE PEDIDO 5</a></p>
+<p><a class="reference external" href="#tiendas-por-localizacion">5. TIENDAS POR LOCALIZACIÓN 7</a></p>
+<p><a class="reference external" href="#horas-disponibles">6. HORAS DISPONIBLES 9</a></p>
+<p><a class="reference external" href="#obtener-catálogo">7. OBTENER CATÁLOGO 10</a></p>
+<p><a class="reference external" href="#obtener-los-ingredientes-elegibles-para-un-producto">7.1 Obtener los ingredientes elegibles para un producto
+15</a></p>
+<p><a class="reference external" href="#creación-del-pedido">8. CREACIÓN DEL PEDIDO 21</a></p>
+<p><a class="reference external" href="#añadir-un-producto">9. AÑADIR UN PRODUCTO 22</a></p>
+<p><a class="reference external" href="#establecer-una-dirección-de-entrega">10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
+26</a></p>
+<p><a class="reference external" href="#obtener-medios-de-pago">11. OBTENER MEDIOS DE PAGO 29</a></p>
+<p><a class="reference external" href="#finalizar-pedido">12. FINALIZAR PEDIDO 31</a></p>
 <blockquote>
 <div><p>La información que contiene la presente propuesta es propiedad
 exclusiva de Vector ITC Group No está permitida la reproducción de la
@@ -193,7 +195,6 @@ misma, salvo con autorización expresa.</p>
 empresas no mencionadas explícitamente en el panel de información de
 control y versiones, salvo con autorización expresa de Vector, SL.</p>
 </div></blockquote>
-</div>
 <div class="section" id="introduccion">
 <h2>1. INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Este documento representa la propuesta funcional para dar respuesta a la
@@ -343,15 +344,20 @@ poder realizar cualquier otra dentro del servicio.</p>
 y se corresponderá con el campo <strong>x-auth-back</strong> en los parámetros de
 entrada del resto de llamadas. Este token será válido durante un periodo
 de tiempo y dentro del ámbito del pedido en curso.</p>
-<p>Ejemplo de respuesta:: guess</p>
-<blockquote>
-<div><p>{
-«access_token»:
-«eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw»,
-«expires_in»: 3600,
-«token_type»: «Bearer»
-}</p>
-</div></blockquote>
+<p>Ejemplo de respuesta:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+
+<span class="nt">&quot;access_token&quot;</span><span class="p">:</span>
+
+<span class="s2">&quot;eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRdoG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw&quot;</span><span class="p">,</span>
+
+<span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+
+<span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer&quot;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="tiendas-por-localizacion">
 <h2>5. TIENDAS POR LOCALIZACIÓN<a class="headerlink" href="#tiendas-por-localizacion" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -402,65 +408,65 @@ existentes.</p>
 utilizará en consultas posteriores, junto con la dirección de la tienda
 (calle, ciudad y provincia).</p>
 <p>Ejemplo de respuesta:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
 
 <span class="p">{</span>
 
-<span class="s2">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00145&quot;</span><span class="p">,</span>
+<span class="nt">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00145&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Gertrudis Gómez de Avellaneda&quot;</span><span class="p">,</span>
+<span class="nt">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Gertrudis Gómez de Avellaneda&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
+<span class="nt">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
 
 <span class="p">},</span>
 
 <span class="p">{</span>
 
-<span class="s2">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00306&quot;</span><span class="p">,</span>
+<span class="nt">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00306&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Sobrarbe 43&quot;</span><span class="p">,</span>
+<span class="nt">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Sobrarbe 43&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
-
-<span class="p">},</span>
-
-<span class="p">{</span>
-
-<span class="s2">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00859&quot;</span><span class="p">,</span>
-
-<span class="s2">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Plaza del Pilar 14&quot;</span><span class="p">,</span>
-
-<span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
-
-<span class="s2">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
+<span class="nt">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
 
 <span class="p">},</span>
 
 <span class="p">{</span>
 
-<span class="s2">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00374&quot;</span><span class="p">,</span>
+<span class="nt">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00859&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Paseo María Agustín 9&quot;</span><span class="p">,</span>
+<span class="nt">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Plaza del Pilar 14&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
+<span class="nt">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
 
 <span class="p">},</span>
 
 <span class="p">{</span>
 
-<span class="s2">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00834&quot;</span><span class="p">,</span>
+<span class="nt">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00374&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Avenida de Madrid 198&quot;</span><span class="p">,</span>
+<span class="nt">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Paseo María Agustín 9&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
 
-<span class="s2">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
+<span class="nt">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
+
+<span class="p">},</span>
+
+<span class="p">{</span>
+
+<span class="nt">&quot;shopId&quot;</span><span class="p">:</span> <span class="s2">&quot;00834&quot;</span><span class="p">,</span>
+
+<span class="nt">&quot;addresss&quot;</span><span class="p">:</span> <span class="s2">&quot;Avenida de Madrid 198&quot;</span><span class="p">,</span>
+
+<span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span><span class="p">,</span>
+
+<span class="nt">&quot;province&quot;</span><span class="p">:</span> <span class="s2">&quot;ZARAGOZA&quot;</span>
 
 <span class="p">}</span>
 
@@ -533,31 +539,56 @@ tiempo de espera entre hora y hora, configurado para la tienda asignada
 a esa localización, o para la tienda indicada.</p>
 <blockquote>
 <div><p>Ejemplo de respuesta:</p>
-<p>{</p>
-<p>«availableHours»: [</p>
-<p>«2019-05-27T19:05:00Z»,</p>
-<p>«2019-05-27T19:20:00Z»,</p>
-<p>«2019-05-27T19:35:00Z»,</p>
-<p>«2019-05-27T19:50:00Z»,</p>
-<p>«2019-05-27T20:05:00Z»,</p>
-<p>«2019-05-27T20:20:00Z»,</p>
-<p>«2019-05-27T20:35:00Z»,</p>
-<p>«2019-05-27T20:50:00Z»,</p>
-<p>«2019-05-27T21:05:00Z»,</p>
-<p>«2019-05-27T21:20:00Z»,</p>
-<p>«2019-05-27T21:35:00Z»,</p>
-<p>«2019-05-27T21:50:00Z»,</p>
-<p>«2019-05-27T22:05:00Z»,</p>
-<p>«2019-05-27T22:20:00Z»,</p>
-<p>«2019-05-27T22:35:00Z»,</p>
-<p>«2019-05-27T22:50:00Z»,</p>
-<p>«2019-05-27T23:05:00Z»,</p>
-<p>«2019-05-27T23:20:00Z»,</p>
-<p>«2019-05-27T23:35:00Z»</p>
-<p>],</p>
-<p>«waitTime»: 0</p>
-<p>}</p>
 </div></blockquote>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+
+<span class="nt">&quot;availableHours&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+<span class="s2">&quot;2019-05-27T19:05:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T19:20:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T19:35:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T19:50:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T20:05:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T20:20:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T20:35:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T20:50:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T21:05:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T21:20:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T21:35:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T21:50:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T22:05:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T22:20:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T22:35:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T22:50:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T23:05:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T23:20:00Z&quot;</span><span class="p">,</span>
+
+<span class="s2">&quot;2019-05-27T23:35:00Z&quot;</span>
+
+<span class="p">],</span>
+
+<span class="nt">&quot;waitTime&quot;</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="obtener-catalogo">
 <h2>7. OBTENER CATÁLOGO<a class="headerlink" href="#obtener-catalogo" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -665,433 +696,433 @@ y diferentes tamaños de masa también elegibles, entre otros campos.</p>
 </tbody>
 </table>
 <p>Ejemplo de respuesta:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
 
-<span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;categories&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923100&quot;</span><span class="p">,</span>
+&quot;categoryId&quot;: &quot;999990004923100&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizzas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Pizzas&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+&quot;description&quot;: &quot;&quot;,
 
-<span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;subcategories&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922538&quot;</span><span class="p">,</span>
+&quot;subcategoryId&quot;: &quot;999990004922538&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Las Clásicas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Las Clásicas&quot;,
 
-<span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;products&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006710&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990000006710&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizza Barbacoa&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Pizza Barbacoa&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Masa fresca, bacon, pollo, topping a base de</span>
-<span class="n">mozzarella</span><span class="p">,</span> <span class="n">salsa</span> <span class="n">barbacoa</span> <span class="n">y</span> <span class="n">doble</span> <span class="n">de</span> <span class="n">carne</span> <span class="n">de</span> <span class="n">vacuno</span><span class="o">.</span><span class="s2">&quot;,</span>
+&quot;description&quot;: &quot;Masa fresca, bacon, pollo, topping a base de
+mozzarella, salsa barbacoa y doble de carne de vacuno.&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
-<span class="s2">&quot;http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png&quot;</span><span class="p">,</span>
+&quot;image&quot;:
+&quot;http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png&quot;,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: true,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: &quot;20&quot;,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 1,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;sizes&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;16&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pequeña&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Pequeña&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">14.95</span>
+&quot;price&quot;: 14.95
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;20&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Mediana&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Mediana&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">20.95</span>
+&quot;price&quot;: 20.95
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;21&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;21&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Familiar&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Familiar&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">27.95</span>
+&quot;price&quot;: 27.95
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;36&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;36&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Strómboli&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Strómboli&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">20.95</span>
+&quot;price&quot;: 20.95
 
-<span class="p">}</span>
+}
 
-<span class="p">],</span>
+],
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;defaultIngredients&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005361675&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990005361675&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;SALSA BARBACOA&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;SALSA BARBACOA&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/sbpr.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbpr.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;1&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 1&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 1&quot;
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000005700&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;BASE CLÁSICA&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990000005700&quot;, &quot;name&quot;: &quot;BASE CLÁSICA&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/base.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/base.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;2&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 2&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 2&quot;
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005369717&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Con Topping&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990005369717&quot;, &quot;name&quot;: &quot;Con Topping&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/moze.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/moze.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;3&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 3&quot;
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000004466&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Carne de vacuno&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990000004466&quot;, &quot;name&quot;: &quot;Carne de vacuno&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;3&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 3&quot;
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005436200&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bacon&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990005436200&quot;, &quot;name&quot;: &quot;Bacon&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;3&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 3&quot;
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000004543&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pollo marinado&quot;</span><span class="p">,</span>
+&quot;ingredientId&quot;: &quot;999990000004543&quot;, &quot;name&quot;: &quot;Pollo marinado&quot;,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span>
+&quot;image&quot;:
 
-<span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span>
+&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
 
-<span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+&quot;quantity&quot;: 1,
 
-<span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+&quot;groupId&quot;: &quot;3&quot;,
 
-<span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span>
+&quot;groupDescription&quot;: &quot;Group 3&quot;
 
-<span class="p">}</span>
+}
 
-<span class="p">],</span>
+],
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;productBaseSizes&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006710&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990000006710&quot;,
 
-<span class="s2">&quot;allowedSizes&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;allowedSizes&quot;: [
 
-<span class="s2">&quot;36&quot;</span><span class="p">,</span>
+&quot;36&quot;,
 
-<span class="s2">&quot;20&quot;</span>
+&quot;20&quot;
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000013106&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990000013106&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizza Carbonara&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Pizza Carbonara&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;description&quot;: null,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;image&quot;: null,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: false,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: null,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 0,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;sizes&quot;: null,
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultIngredients&quot;: null,
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span>
+&quot;productBaseSizes&quot;: null
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922500&quot;</span><span class="p">,</span>
+&quot;subcategoryId&quot;: &quot;999990004922500&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Las Destacadas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Las Destacadas&quot;,
 
-<span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;products&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006814&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990000006814&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;A tu gusto&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;A tu gusto&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;description&quot;: null,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;image&quot;: null,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: false,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: null,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 0,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;sizes&quot;: null,
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultIngredients&quot;: null,
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span>
+&quot;productBaseSizes&quot;: null
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990010533500&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990010533500&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Telepizza Sweet&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Telepizza Sweet&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;description&quot;: null,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;image&quot;: null,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: false,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: null,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 0,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;sizes&quot;: null,
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultIngredients&quot;: null,
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span>
+&quot;productBaseSizes&quot;: null
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923100&quot;</span><span class="p">,</span>
+&quot;categoryId&quot;: &quot;999990004923100&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bebidas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Bebidas&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+&quot;description&quot;: &quot;&quot;,
 
-<span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;subcategories&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922538&quot;</span><span class="p">,</span>
+&quot;subcategoryId&quot;: &quot;999990004922538&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Refrescos 500 ml&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Refrescos 500 ml&quot;,
 
-<span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;products&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990001261600&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990001261600&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Botella Coca-Cola (500ml)&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Botella Coca-Cola (500ml)&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;description&quot;: null,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;image&quot;: null,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: false,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: null,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 0,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;sizes&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;35&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;35&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;50cl&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;50cl&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">1.95</span>
+&quot;price&quot;: 1.95
 
-<span class="p">}</span>
+}
 
-<span class="p">],</span>
+],
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultIngredients&quot;: null,
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span>
+&quot;productBaseSizes&quot;: null
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">},</span>
+},
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923110&quot;</span><span class="p">,</span>
+&quot;categoryId&quot;: &quot;999990004923110&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hamburguesas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Hamburguesas&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;El bocado perfecto&quot;</span><span class="p">,</span>
+&quot;description&quot;: &quot;El bocado perfecto&quot;,
 
-<span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;subcategories&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923634&quot;</span><span class="p">,</span>
+&quot;subcategoryId&quot;: &quot;999990004923634&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hamburguesas&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Hamburguesas&quot;,
 
-<span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;products&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990006381900&quot;</span><span class="p">,</span>
+&quot;productId&quot;: &quot;999990006381900&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Nueva Top Burguer Vacuno&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Nueva Top Burguer Vacuno&quot;,
 
-<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;description&quot;: null,
 
-<span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;image&quot;: null,
 
-<span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+&quot;portionsAllowed&quot;: false,
 
-<span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultSizeId&quot;: null,
 
-<span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+&quot;maxNumIngredients&quot;: 0,
 
-<span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;sizes&quot;: [
 
-<span class="p">{</span>
+{
 
-<span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;4883062663&quot;</span><span class="p">,</span>
+&quot;sizeId&quot;: &quot;4883062663&quot;,
 
-<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Individual&quot;</span><span class="p">,</span>
+&quot;name&quot;: &quot;Individual&quot;,
 
-<span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">4.95000029</span>
+&quot;price&quot;: 4.95000029
 
-<span class="p">}</span>
+}
 
-<span class="p">],</span>
+],
 
-<span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+&quot;defaultIngredients&quot;: null,
 
-<span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span>
+&quot;productBaseSizes&quot;: null
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="p">]</span>
+]
 
-<span class="p">}</span>
+}
 
-<span class="n">GET</span> <span class="o">/</span><span class="n">catalogue</span><span class="o">/</span><span class="n">shop</span><span class="o">/</span><span class="p">{</span><span class="n">ShopId</span><span class="p">}</span><span class="o">/</span><span class="p">{</span><span class="n">DeliveryType</span><span class="p">}</span>
+GET /catalogue/shop/{ShopId}/{DeliveryType}
 </pre></div>
 </div>
 <p>Esta llamada se encarga de comenzar un pedido de un kiosco, obteniendo
@@ -1190,9 +1221,16 @@ seleccionado. Dentro de cada agrupación estarán incluidos el listado de
 ingredientes seleccionables. Estas agrupaciones son una clasificación
 por tipo de ingrediente que permite saber la cantidad mínima y máxima de
 ingredientes que pueden ser añadidos o no, al producto.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image3.emf"><img alt="image2" src="../_images/image3.emf" style="width: 4.77273in; height: 2.22708in;" /></a></p>
+<p><a class="reference internal" href="../_images/image4.emf"><img alt="image3" src="../_images/image4.emf" style="width: 4.83333in; height: 1.15903in;" /></a></p>
+<p><a class="reference internal" href="../_images/image5.emf"><img alt="image4" src="../_images/image5.emf" style="width: 4.83333in; height: 1.15903in;" /></a></p>
+</div></blockquote>
+<p><a class="reference internal" href="../_images/image6.jpg"><img alt="image5" src="../_images/image6.jpg" style="width: 5.06982in; height: 1.59083in;" /></a></p>
+<p><a class="reference internal" href="../_images/image7.jpg"><img alt="image6" src="../_images/image7.jpg" style="width: 5.04761in; height: 2.44054in;" /></a></p>
 <p>Esta agrupación se podrá utilizar para mostrar en pantalla la
 información de estos ingredientes en listados seleccionables u otros
-contenedores:<a class="reference internal" href="../_images/image3.png"><img alt="image2" src="../_images/image3.png" style="width: 5.70729in; height: 5.40312in;" /></a></p>
+contenedores:</p>
 <p>Por ejemplo, si el campo mínimo de ingredientes viene informado con un 0
 y el de máximo de ingredientes con valor 1, se correspondería con un
 ingrediente opcional que puede o no ir incluido. En la imagen anterior
@@ -1206,7 +1244,7 @@ Mozzarella”.</p>
 máximo con valor 8, implica que son ingredientes opcionales, y como
 máximo se podrán añadir 8 ingredientes en total, 8 del mismo tipo u 8 en
 total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:</p>
-<p><a class="reference internal" href="../_images/image11.png"><img alt="image3" src="../_images/image11.png" style="width: 6.93799in; height: 4.81285in;" /></a></p>
+<p><a class="reference internal" href="../_images/image8.jpg"><img alt="image7" src="../_images/image8.jpg" style="width: 6.29097in; height: 4.19722in;" /></a></p>
 <blockquote>
 <div><p>Ejemplo de respuesta:</p>
 <p>[</p>
