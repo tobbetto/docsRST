@@ -10,9 +10,9 @@ Welcome to techDocTLPZ's documentation!
    :maxdepth: 1
    :caption: Contents:
    
-   docs/orderflow
-   docs/orderflow_2
    rst/es_es/technical documentation/orders/Manual de usuario
+   rst/es_es/functional documentation/appification/funcionalidades_apificacion_1_4
+   docs/orderflow_2
 
 
 Indices and tables
