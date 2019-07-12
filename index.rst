@@ -10,9 +10,10 @@ Welcome to techDocTLPZ's documentation!
    :maxdepth: 1
    :caption: Contents:
    
-   rst/es_es/technical documentation/orders/Manual de usuario
-   rst/es_es/functional documentation/appification/funcionalidades_apificacion_1_4
+   rst_docs/es_es/technical documentation/orders/Manual de usuario
+   rst_docs/es_es/functional documentation/appification/funcionalidades_apificacion_1_4
    docs/orderflow_2
+   rst_docs/es_es/Welcome/acceso_plataforma_gtu
 
 
 Indices and tables
