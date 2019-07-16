@@ -14,6 +14,7 @@ Welcome to techDocTLPZ's documentation!
    rst_docs/es_es/functional documentation/appification/funcionalidades_apificacion_1_4
    docs/orderflow_2
    rst_docs/es_es/Welcome/acceso_plataforma_gtu
+   rst_docs/plantillas/tobbi
 
 
 Indices and tables
