@@ -134,13 +134,6 @@ ul.keywordmatches li.goodmatch a {
     font-weight: bold;
 }
 
-ul.li.toctree-l1 a {
-	background-image: url('../_images/descarga.jpg');
-	background-size: cover;
-	
-	
-}
-
 /* -- index page ------------------------------------------------------------ */
 
 table.contentstable {
