@@ -7,13 +7,16 @@ Welcome to techDocTLPZ's documentation!
 =======================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
-   
-   rst_docs/es_es/technical documentation/orders/Manual de usuario
-   rst_docs/es_es/functional documentation/appification/funcionalidades_apificacion_1_4
-   docs/orderflow_2
+
    rst_docs/es_es/Welcome/acceso_plataforma_gtu
+   rst_docs/es_es/guia_funcional/indice_funcional
+   rst_docs/es_es/guia_funcional/orders/Manual de usuario
+   rst_docs/es_es/guia_tecnica/indice_tecnico
+   rst_docs/es_es/guia_tecnica/orderflow/orderflow_2
+   rst_docs/es_es/guia_tecnica/apificacion/funcionalidades_apificacion
+   rst_docs/es_es/guia_configuracion/indice_configuracion
    rst_docs/plantillas/tobbi
 
 
