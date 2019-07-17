@@ -40,6 +40,7 @@ Fecha Área responsable
 `7. PRIMER NIVEL DE TÍTULO: Introducción de vídeos
 7 <#primer-nivel-de-titulo-introduccion-de-videos>`__
 
+
 PRIMER NIVEL DE TITULO 1: Uso de títulos 
 =========================================
 
