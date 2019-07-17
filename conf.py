@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'techDocTLPZ'
-copyright = '2019, Thorvaldur Konradsson'
-author = 'Thorvaldur Konradsson'
+copyright = '2019, Telepizza'
+author = 'Telepizza'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1.a'
@@ -55,9 +55,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_bootstrap_theme
-# html_theme = 'sphinx_rtd_theme'
-html_theme = 'bootstrap'
+# import sphinx_bootstrap_theme
+html_theme = 'sphinx_rtd_theme'
+# html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Add any paths that contain custom static files (such as style sheets) here,
