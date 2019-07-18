@@ -21,6 +21,7 @@ Bienvenidos a la documentación del futuro!
    :caption: Guía Funcional:
    
    rst_docs/es_es/guia_funcional/indice_funcional
+   rst_docs/es_es/guia_funcional/orders/Manual de usuario
  
 .. toctree::
    :maxdepth: 1
@@ -28,6 +29,8 @@ Bienvenidos a la documentación del futuro!
    :caption: Guía Técnica:
    
    rst_docs/es_es/guia_tecnica/indice_tecnico
+   rst_docs/es_es/guia_tecnica/orderflow/orderflow_2
+   rst_docs/es_es/guia_tecnica/apificacion/funcionalidades_apificacion
 
 .. toctree::
    :maxdepth: 1
