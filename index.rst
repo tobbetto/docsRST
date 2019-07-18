@@ -55,15 +55,15 @@ Indices and tables
 * :ref:`search`
 
 .. |image0| image:: images/index/image0.png
-   :target: rst_docs/es_es/guia_funcional/indice_funcional.html
+   :target: rst_docs/es_es/guia_funcional/indice_funcional/
    :width: 130px
    :height: 86px
 .. |image1| image:: images/index/image1.png
-   :target: rst_docs/es_es/guia_tecnica/indice_tecnico.html
+   :target: rst_docs/es_es/guia_tecnica/indice_tecnico/
    :width: 130px
    :height: 86px
 .. |image2| image:: images/index/image2.png
-   :target: rst_docs/es_es/guia_configuracion/indice_configuracion.html
+   :target: rst_docs/es_es/guia_configuracion/indice_configuracion/
    :width: 130px
    :height: 86px
 .. |image3| image:: images/index/image3.png
