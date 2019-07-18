@@ -7,7 +7,7 @@ ACCESO PLATAFORMA GTU
 VÍDEO INICIO
 ============
 
-.. youtube:: oHg5SJYRHA0
+.. youtube:: MhBF9sxOeVc
 
 .. raw:: html
 
