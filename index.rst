@@ -124,7 +124,7 @@ see :ref:`my-reference-label`
    Module :ref:`my-reference-label`
       Documentation of the :ref:`my-reference-label` standard module.
 
-   `GUIA FUNCIONAL <rst_docs/es_es/guia_funcional/indice_funcional.html>`_
+   `GUIA FUNCIONAL <rst_docs/es_es/guia_funcional/indice_funcional/>`_
       Documentation for tar archive files, including GNU tar extensions.
 	  
 .. centered:: LICENSE AGREEMENT
@@ -207,15 +207,15 @@ Indices and tables
 * :ref:`search`
 
 .. |guia_funcional| image:: images/index/guia_funcional.png
-   :target: rst_docs/es_es/guia_funcional/indice_funcional.html
+   :target: rst_docs/es_es/guia_funcional/indice_funcional/
    :width: 130px
    :height: 86px
 .. |guia_tecnica| image:: images/index/guia_tecnica.png
-   :target: rst_docs/es_es/guia_tecnica/indice_tecnico.html
+   :target: rst_docs/es_es/guia_tecnica/indice_tecnico/
    :width: 130px
    :height: 86px
 .. |guia_configuracion| image:: images/index/guia_configuracion.png
-   :target: rst_docs/es_es/guia_configuracion/indice_configuracion.html
+   :target: rst_docs/es_es/guia_configuracion/indice_configuracion/
    :width: 130px
    :height: 86px
 .. |gtu| image:: images/index/gtu.png
