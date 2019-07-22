@@ -4,31 +4,27 @@
 FUNCIONALIDAD APIFICACIÓN
 =========================
 
-`1. INTRODUCCIÓN 5 <#introducción>`__
+`1. INTRODUCCIÓN 5 <#introduccion>`__
 
-`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
-5 <#flujo-de-creación-de-pedido-básico>`__
+`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO <#flujo-de-creacion-de-pedido-basico>`__
 
-`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
-6 <#flujo-de-creación-de-un-pedido-de-kiosco>`__
+`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO <#flujo-de-creacion-de-un-pedido-de-kiosco>`__
 
 `4. INICIO DE PEDIDO 6 <#inicio-de-pedido>`__
 
-`5. TIENDAS POR LOCALIZACIÓN 8 <#tiendas-por-localización>`__
+`5. TIENDAS POR LOCALIZACIÓN 8 <#tiendas-por-localizacion>`__
 
 `6. HORAS DISPONIBLES 9 <#horas-disponibles>`__
 
-`7. OBTENER CATÁLOGO 10 <#obtener-catálogo>`__
+`7. OBTENER CATÁLOGO 10 <#obtener-catalogo>`__
 
-`7.1 Obtener los ingredientes elegibles para un producto
-15 <#obtener-los-ingredientes-elegibles-para-un-producto>`__
+`7.1 Obtener los ingredientes elegibles para un producto <#obtener-los-ingredientes-elegibles-para-un-producto>`__
 
-`8. CREACIÓN DEL PEDIDO 21 <#creación-del-pedido>`__
+`8. CREACIÓN DEL PEDIDO 21 <#creacion-del-pedido>`__
 
 `9. AÑADIR UN PRODUCTO 22 <#añadir-un-producto>`__
 
-`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
-26 <#establecer-una-dirección-de-entrega>`__
+`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA <#establecer-una-direccion-de-entrega>`__
 
 `11. OBTENER MEDIOS DE PAGO 29 <#obtener-medios-de-pago>`__
 

@@ -10,8 +10,7 @@ TITULO DEL DOCUMENTO AQUÍ
 Fecha Área responsable
 ===== ================
 
-`1. PRIMER NIVEL DE TITULO 1: Uso de títulos
-2 <#primer-nivel-de-titulo-1-uso-de-títulos>`__
+`1. PRIMER NIVEL DE TITULO 1: Uso de títulos <#primer-nivel-de-titulo-1-uso-de-titulos>`__
 
 `1.1 Segundo nivel titulo 2 2 <#segundo-nivel-titulo-2>`__
 
@@ -21,23 +20,17 @@ Fecha Área responsable
 
 `1.1.3 Tercer nivel 3: 2 <#tercer-nivel-3-2>`__
 
-`2. PRIMER NIVEL DE TITULO 1: Uso de viñetas
-2 <#primer-nivel-de-titulo-1-uso-de-viñetas>`__
+`2. PRIMER NIVEL DE TITULO 1: Uso de viñetas <#primer-nivel-de-titulo-1-uso-de-vinetas>`__
 
-`3. PRIMER NIVEL DE TÍTULO 1: Uso de tablas
-2 <#primer-nivel-de-título-1-uso-de-tablas>`__
+`3. PRIMER NIVEL DE TÍTULO 1: Uso de tablas <#primer-nivel-de-titulo-1-uso-de-tablas>`__
 
-`4. PRIMER NIVEL DE TÍTULO: Introducción de ejemplos
-3 <#primer-nivel-de-título-introducción-de-ejemplos>`__
+`4. PRIMER NIVEL DE TÍTULO: Introducción de ejemplos <#primer-nivel-de-titulo-introduccion-de-ejemplos>`__
 
-`5. PRIMER NIVEL DE TÍTULO: Introducción de links a webs externas
-3 <#primer-nivel-de-título-introducción-de-links-a-webs-externas>`__
+`5. PRIMER NIVEL DE TÍTULO: Introducción de links a webs externas <#primer-nivel-de-titulo-introduccion-de-links-a-webs-externas>`__
 
-`6. PRIMER NIVEL DE TÍTULO: Introducción de imágenes
-3 <#primer-nivel-de-título-introducción-de-imágenes>`__
+`6. PRIMER NIVEL DE TÍTULO: Introducción de imágenes <#primer-nivel-de-titulo-introduccion-de-imagenes>`__
 
-`7. PRIMER NIVEL DE TÍTULO: Introducción de vídeos
-3 <#primer-nivel-de-título-introducción-de-vídeos>`__
+`7. PRIMER NIVEL DE TÍTULO: Introducción de vídeos <#primer-nivel-de-titulo-introduccion-de-videos>`__
 
 1. PRIMER NIVEL DE TITULO 1: Uso de títulos 
 ============================================
