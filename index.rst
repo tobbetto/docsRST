@@ -66,7 +66,19 @@ Bienvenidos a la documentación del futuro!
 
 .. literalinclude:: example.py
    :lines: 10-20
-   :emphasize-lines: 3,8,11
+   :linenos:
+   
+.. literalinclude:: index.rst
+   :lines: 79-85
+   :emphasize-lines: 3,5
+   :linenos:
+   
+.. index::
+   single: funcion; johnny()
+ 
+.. literalinclude:: johnny.json
+   :lines: 1-211
+   :emphasize-lines: 3,5
    :linenos:
 
 Examples:
