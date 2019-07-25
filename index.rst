@@ -208,7 +208,7 @@ Indices and tables
 * :ref:`search`
 
 .. |guia_funcional| image:: images/index/guia_funcional.png
-   :target: rst_docs/es_es/guia_funcional/indice_funcional/
+   :target: rst_docs/es_es/guia_funcional/index_func/
    :width: 130px
    :height: 86px
 .. |guia_tecnica| image:: images/index/guia_tecnica.png
