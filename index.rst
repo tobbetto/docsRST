@@ -1,4 +1,4 @@
-.. header:: This space for rent.
+﻿.. header:: This space for rent.
 
 .. techDocTLPZ documentation master file, created by
    sphinx-quickstart on Tue Jun 25 10:03:19 2019.
@@ -32,6 +32,7 @@ Bienvenidos a la documentación del futuro!
    rst_docs/es_es/guia_tecnica/indice_tecnico
    rst_docs/es_es/guia_tecnica/orderflow/orderflow_2
    rst_docs/es_es/guia_tecnica/apificacion/funcionalidades_apificacion
+   rst_docs/es_es/guia_tecnica/data_lake/plantilla_documentacion_Fomento_uso_app_v02
 
 .. toctree::
    :maxdepth: 1
@@ -111,9 +112,6 @@ see :ref:`my-reference-label`
 .. warning::
 
 	Agitar antes de hablar
-	
-.. versionadded:: 2.5
-   The *spam* parameter.
    
 .. error::
 
@@ -126,8 +124,11 @@ see :ref:`my-reference-label`
 
    `GUIA FUNCIONAL <rst_docs/es_es/guia_funcional/indice_funcional/>`_
       Documentation for tar archive files, including GNU tar extensions.
+
+.. versionadded:: 2.5
+   The *spam* parameter.
 	  
-.. centered:: LICENSE AGREEMENT
+.. centered:: **LICENSE AGREEMENT**
 
 .. hlist::
    :columns: 3
