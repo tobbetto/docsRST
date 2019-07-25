@@ -208,15 +208,15 @@ Indices and tables
 * :ref:`search`
 
 .. |guia_funcional| image:: images/index/guia_funcional.png
-   :target: rst_docs/es_es/guia_funcional/index_func/
+   :target: rst_docs/es_es/guia_funcional/index_func.html
    :width: 130px
    :height: 86px
 .. |guia_tecnica| image:: images/index/guia_tecnica.png
-   :target: rst_docs/es_es/guia_tecnica/indice_tecnico/
+   :target: rst_docs/es_es/guia_tecnica/indice_tecnico.html
    :width: 130px
    :height: 86px
 .. |guia_configuracion| image:: images/index/guia_configuracion.png
-   :target: rst_docs/es_es/guia_configuracion/indice_configuracion/
+   :target: rst_docs/es_es/guia_configuracion/indice_configuracion.html
    :width: 130px
    :height: 86px
 .. |gtu| image:: images/index/gtu.png
