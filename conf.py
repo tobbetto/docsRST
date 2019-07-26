@@ -54,9 +54,7 @@ show_authors = 'TRUE'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
-#import sphinx_bootstrap_theme
-#html_theme = 'bootstrap'
+#html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -66,9 +64,13 @@ html_static_path = ['_static']
 #html_theme = 'sphinx_pdj_theme'
 #import sphinx_pdj_theme
 #html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
-#html_theme_path = [sphinx_bootstrap_theme.get_html_theme_path()]
 
 #better-theme
 #from better import better_theme_path
 #html_theme_path = [better_theme_path]
 #html_theme = 'better'
+
+#bootstrap-theme
+import sphinx_bootstrap_theme
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
