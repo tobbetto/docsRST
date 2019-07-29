@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FUNCIONALIDAD APIFICACIÓN &mdash; documentación de techDocTLPZ - 0.0.1.a</title>
+  <title>FUNCIONALIDAD APIFICACIÓN &mdash; BlocksInCloud 0.0.1.a documentation</title>
   
 
   
@@ -25,7 +25,6 @@
         <script type="text/javascript" src="../../../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../../../_static/doctools.js"></script>
         <script type="text/javascript" src="../../../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../../../_static/translations.js"></script>
     
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
@@ -34,8 +33,10 @@
   
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Índice" href="../../../../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../../../../search.html" /> 
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="JOURNEY - Fomento Uso App" href="../data_lake/plantilla_documentacion_Fomento_uso_app_v02.html" />
+    <link rel="prev" title="ORDER CREATION FLOW" href="../orderflow/orderflow_2.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +50,7 @@
           
 
           
-            <a href="../../../../index.html" class="icon icon-home"> techDocTLPZ
+            <a href="../../../../index.html" class="icon icon-home"> BlocksInCloud
           
 
           
@@ -83,9 +84,45 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Welcome/acceso_plataforma_gtu.html">ACCESO PLATAFORMA GTU</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Guía Funcional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../guia_funcional/index_func.html">Introducción</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guía Técnica:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../indice_tecnico.html">GUIA TÉCNICA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orderflow/orderflow_2.html">ORDER CREATION FLOW</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FUNCIONALIDAD APIFICACIÓN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">1. INTRODUCCIÓN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flujo-de-creacion-de-pedido-basico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flujo-de-creacion-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inicio-de-pedido">4. INICIO DE PEDIDO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tiendas-por-localizacion">5. TIENDAS POR LOCALIZACIÓN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#horas-disponibles">6. HORAS DISPONIBLES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtener-catalogo">7. OBTENER CATÁLOGO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#obtener-los-ingredientes-elegibles-para-un-producto">7.1 Obtener los ingredientes elegibles para un producto</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#creacion-del-pedido">8. CREACIÓN DEL PEDIDO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anadir-un-producto">9. AÑADIR UN PRODUCTO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#establecer-una-direccion-de-entrega">10. ESTABLECER UNA DIRECCIÓN DE ENTREGA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtener-medios-de-pago">11. OBTENER MEDIOS DE PAGO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#finalizar-pedido">12. FINALIZAR PEDIDO</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_lake/plantilla_documentacion_Fomento_uso_app_v02.html">JOURNEY - Fomento Uso App</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guía de configuración:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../guia_configuracion/indice_configuracion.html">GUIA DE CONFIGURACIÓN E INSTALACIÓN</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Anexo:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../plantillas/tobbi.html">TITULO DEL DOCUMENTO AQUÍ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Glosario:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../glosario/glosario_es.html">GLOSARIO</a></li>
 </ul>
 
             
@@ -100,7 +137,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">techDocTLPZ</a>
+          <a href="../../../../index.html">BlocksInCloud</a>
         
       </nav>
 
@@ -152,22 +189,18 @@
             
   <p><a class="reference internal" href="../../../../_images/image12.png"><img alt="image0" src="../../../../_images/image12.png" style="width: 3.07874in; height: 0.81102in;" /></a></p>
 <div class="section" id="funcionalidad-apificacion">
-<h1>FUNCIONALIDAD APIFICACIÓN<a class="headerlink" href="#funcionalidad-apificacion" title="Enlazar permanentemente con este título">¶</a></h1>
-<p><a class="reference external" href="#introducción">1. INTRODUCCIÓN 5</a></p>
-<p><a class="reference external" href="#flujo-de-creación-de-pedido-básico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
-5</a></p>
-<p><a class="reference external" href="#flujo-de-creación-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
-6</a></p>
+<h1>FUNCIONALIDAD APIFICACIÓN<a class="headerlink" href="#funcionalidad-apificacion" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="#introduccion">1. INTRODUCCIÓN 5</a></p>
+<p><a class="reference external" href="#flujo-de-creacion-de-pedido-basico">2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO</a></p>
+<p><a class="reference external" href="#flujo-de-creacion-de-un-pedido-de-kiosco">3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO</a></p>
 <p><a class="reference external" href="#inicio-de-pedido">4. INICIO DE PEDIDO 6</a></p>
-<p><a class="reference external" href="#tiendas-por-localización">5. TIENDAS POR LOCALIZACIÓN 8</a></p>
+<p><a class="reference external" href="#tiendas-por-localizacion">5. TIENDAS POR LOCALIZACIÓN 8</a></p>
 <p><a class="reference external" href="#horas-disponibles">6. HORAS DISPONIBLES 9</a></p>
-<p><a class="reference external" href="#obtener-catálogo">7. OBTENER CATÁLOGO 10</a></p>
-<p><a class="reference external" href="#obtener-los-ingredientes-elegibles-para-un-producto">7.1 Obtener los ingredientes elegibles para un producto
-15</a></p>
-<p><a class="reference external" href="#creación-del-pedido">8. CREACIÓN DEL PEDIDO 21</a></p>
+<p><a class="reference external" href="#obtener-catalogo">7. OBTENER CATÁLOGO 10</a></p>
+<p><a class="reference external" href="#obtener-los-ingredientes-elegibles-para-un-producto">7.1 Obtener los ingredientes elegibles para un producto</a></p>
+<p><a class="reference external" href="#creacion-del-pedido">8. CREACIÓN DEL PEDIDO 21</a></p>
 <p><a class="reference external" href="#añadir-un-producto">9. AÑADIR UN PRODUCTO 22</a></p>
-<p><a class="reference external" href="#establecer-una-dirección-de-entrega">10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
-26</a></p>
+<p><a class="reference external" href="#establecer-una-direccion-de-entrega">10. ESTABLECER UNA DIRECCIÓN DE ENTREGA</a></p>
 <p><a class="reference external" href="#obtener-medios-de-pago">11. OBTENER MEDIOS DE PAGO 29</a></p>
 <p><a class="reference external" href="#finalizar-pedido">12. FINALIZAR PEDIDO 31</a></p>
 <blockquote>
@@ -181,7 +214,7 @@ control y versiones, salvo con autorización expresa de Vector, SL.</p>
 <p><a class="reference internal" href="../../../../_images/image21.png"><img alt="image2" src="../../../../_images/image21.png" style="width: 6.19375in;" /></a></p>
 </div></blockquote>
 <div class="section" id="introduccion">
-<h2>1. INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>1. INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
 <p>Este documento representa la propuesta funcional para dar respuesta a la
 necesidad de Telepizza de crear un producto integrable por consumidores
 externos.</p>
@@ -189,7 +222,7 @@ externos.</p>
 un pedido a Telepizza a través de un consumidor externo.</p>
 </div>
 <div class="section" id="flujo-de-creacion-de-pedido-basico">
-<h2>2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO<a class="headerlink" href="#flujo-de-creacion-de-pedido-basico" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO<a class="headerlink" href="#flujo-de-creacion-de-pedido-basico" title="Permalink to this headline">¶</a></h2>
 <p>Para poder crear un pedido sencillo mediante la Apificación, será
 necesario realizar las llamadas a los servicios en el siguiente orden
 concreto:</p>
@@ -241,7 +274,7 @@ concreto:</p>
 </div></blockquote>
 </div>
 <div class="section" id="flujo-de-creacion-de-un-pedido-de-kiosco">
-<h2>3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO<a class="headerlink" href="#flujo-de-creacion-de-un-pedido-de-kiosco" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO<a class="headerlink" href="#flujo-de-creacion-de-un-pedido-de-kiosco" title="Permalink to this headline">¶</a></h2>
 <p>Para poder crear un pedido de kiosko mediante la Apificación, será
 necesario realizar las llamadas a los servicios en el siguiente orden
 concreto:</p>
@@ -277,7 +310,7 @@ concreto:</p>
 </div></blockquote>
 </div>
 <div class="section" id="inicio-de-pedido">
-<h2>4. INICIO DE PEDIDO<a class="headerlink" href="#inicio-de-pedido" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>4. INICIO DE PEDIDO<a class="headerlink" href="#inicio-de-pedido" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>POST /connect/token</p>
 </div></blockquote>
@@ -353,7 +386,7 @@ de tiempo y dentro del ámbito del pedido en curso.</p>
 </div>
 </div>
 <div class="section" id="tiendas-por-localizacion">
-<h2>5. TIENDAS POR LOCALIZACIÓN<a class="headerlink" href="#tiendas-por-localizacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>5. TIENDAS POR LOCALIZACIÓN<a class="headerlink" href="#tiendas-por-localizacion" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>GET /shop/location/{lat}/{lng}</p>
 </div></blockquote>
@@ -470,7 +503,7 @@ utilizará en consultas posteriores, junto con la dirección de la tienda
 </div>
 </div>
 <div class="section" id="horas-disponibles">
-<h2>6. HORAS DISPONIBLES<a class="headerlink" href="#horas-disponibles" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>6. HORAS DISPONIBLES<a class="headerlink" href="#horas-disponibles" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>POST /shop/availablehours</p>
 </div></blockquote>
@@ -535,6 +568,51 @@ a esa localización, o para la tienda indicada.</p>
 <blockquote>
 <div><p>Ejemplo de respuesta:</p>
 </div></blockquote>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span> 
+  <span class="s2">&quot;availableHours&quot;</span><span class="p">:</span> <span class="p">[</span>     
+<span class="hll">    <span class="s2">&quot;2019-05-27T19:05:00Z&quot;</span><span class="p">,</span> 
+</span>    <span class="s2">&quot;2019-05-27T19:20:00Z&quot;</span><span class="p">,</span> 
+<span class="hll">    <span class="s2">&quot;2019-05-27T19:35:00Z&quot;</span><span class="p">,</span> 
+</span>    <span class="s2">&quot;2019-05-27T19:50:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T20:05:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T20:20:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T20:35:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T20:50:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T21:05:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T21:20:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T21:35:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T21:50:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T22:05:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T22:20:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T22:35:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T22:50:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T23:05:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T23:20:00Z&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2019-05-27T23:35:00Z&quot;</span> 
+  <span class="p">],</span> 
+</pre></div>
+</td></tr></table></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 
 <span class="nt">&quot;availableHours&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -586,7 +664,7 @@ a esa localización, o para la tienda indicada.</p>
 </div>
 </div>
 <div class="section" id="obtener-catalogo">
-<h2>7. OBTENER CATÁLOGO<a class="headerlink" href="#obtener-catalogo" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>7. OBTENER CATÁLOGO<a class="headerlink" href="#obtener-catalogo" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>GET /catalogue/shop/{id}</p>
 </div></blockquote>
@@ -692,435 +770,430 @@ y diferentes tamaños de masa también elegibles, entre otros campos.</p>
 <blockquote>
 <div><p>Ejemplo de respuesta:</p>
 </div></blockquote>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
-
-&quot;categories&quot;: [
-
-{
-
-&quot;categoryId&quot;: &quot;999990004923100&quot;,
-
-&quot;name&quot;: &quot;Pizzas&quot;,
-
-&quot;description&quot;: &quot;&quot;,
-
-&quot;subcategories&quot;: [
-
-{
-
-&quot;subcategoryId&quot;: &quot;999990004922538&quot;,
-
-&quot;name&quot;: &quot;Las Clásicas&quot;,
-
-&quot;products&quot;: [
-
-{
-
-&quot;productId&quot;: &quot;999990000006710&quot;,
-
-&quot;name&quot;: &quot;Pizza Barbacoa&quot;,
-
-&quot;description&quot;: &quot;Masa fresca, bacon, pollo, topping a base de
-mozzarella, salsa barbacoa y doble de carne de vacuno.&quot;,
-
-&quot;image&quot;:
-&quot;http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png&quot;,
-
-&quot;portionsAllowed&quot;: true,
-
-&quot;defaultSizeId&quot;: &quot;20&quot;,
-
-&quot;maxNumIngredients&quot;: 1,
-
-&quot;sizes&quot;: [
-
-{
-
-&quot;sizeId&quot;: &quot;16&quot;,
-
-&quot;name&quot;: &quot;Pequeña&quot;,
-
-&quot;price&quot;: 14.95
-
-},
-
-{
-
-&quot;sizeId&quot;: &quot;20&quot;,
-
-&quot;name&quot;: &quot;Mediana&quot;,
-
-&quot;price&quot;: 20.95
-
-},
-
-{
-
-&quot;sizeId&quot;: &quot;21&quot;,
-
-&quot;name&quot;: &quot;Familiar&quot;,
-
-&quot;price&quot;: 27.95
-
-},
-
-{
-
-&quot;sizeId&quot;: &quot;36&quot;,
-
-&quot;name&quot;: &quot;Strómboli&quot;,
-
-&quot;price&quot;: 20.95
-
-}
-
-],
-
-&quot;defaultIngredients&quot;: [
-
-{
-
-&quot;ingredientId&quot;: &quot;999990005361675&quot;,
-
-&quot;name&quot;: &quot;SALSA BARBACOA&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbpr.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;1&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 1&quot;
-
-},
-
-{
-
-&quot;ingredientId&quot;: &quot;999990000005700&quot;, &quot;name&quot;: &quot;BASE CLÁSICA&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/base.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;2&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 2&quot;
-
-},
-
-{
-
-&quot;ingredientId&quot;: &quot;999990005369717&quot;, &quot;name&quot;: &quot;Con Topping&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/moze.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;3&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 3&quot;
-
-},
-
-{
-
-&quot;ingredientId&quot;: &quot;999990000004466&quot;, &quot;name&quot;: &quot;Carne de vacuno&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;3&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 3&quot;
-
-},
-
-{
-
-&quot;ingredientId&quot;: &quot;999990005436200&quot;, &quot;name&quot;: &quot;Bacon&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;3&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 3&quot;
-
-},
-
-{
-
-&quot;ingredientId&quot;: &quot;999990000004543&quot;, &quot;name&quot;: &quot;Pollo marinado&quot;,
-
-&quot;image&quot;:
-
-&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg&quot;,
-
-&quot;quantity&quot;: 1,
-
-&quot;groupId&quot;: &quot;3&quot;,
-
-&quot;groupDescription&quot;: &quot;Group 3&quot;
-
-}
-
-],
-
-&quot;productBaseSizes&quot;: [
-
-{
-
-&quot;productId&quot;: &quot;999990000006710&quot;,
-
-&quot;allowedSizes&quot;: [
-
-&quot;36&quot;,
-
-&quot;20&quot;
-
-]
-
-}
-
-]
-
-},
-
-{
-
-&quot;productId&quot;: &quot;999990000013106&quot;,
-
-&quot;name&quot;: &quot;Pizza Carbonara&quot;,
-
-&quot;description&quot;: null,
-
-&quot;image&quot;: null,
-
-&quot;portionsAllowed&quot;: false,
-
-&quot;defaultSizeId&quot;: null,
-
-&quot;maxNumIngredients&quot;: 0,
-
-&quot;sizes&quot;: null,
-
-&quot;defaultIngredients&quot;: null,
-
-&quot;productBaseSizes&quot;: null
-
-}
-
-]
-
-},
-
-{
-
-&quot;subcategoryId&quot;: &quot;999990004922500&quot;,
-
-&quot;name&quot;: &quot;Las Destacadas&quot;,
-
-&quot;products&quot;: [
-
-{
-
-&quot;productId&quot;: &quot;999990000006814&quot;,
-
-&quot;name&quot;: &quot;A tu gusto&quot;,
-
-&quot;description&quot;: null,
-
-&quot;image&quot;: null,
-
-&quot;portionsAllowed&quot;: false,
-
-&quot;defaultSizeId&quot;: null,
-
-&quot;maxNumIngredients&quot;: 0,
-
-&quot;sizes&quot;: null,
-
-&quot;defaultIngredients&quot;: null,
-
-&quot;productBaseSizes&quot;: null
-
-},
-
-{
-
-&quot;productId&quot;: &quot;999990010533500&quot;,
-
-&quot;name&quot;: &quot;Telepizza Sweet&quot;,
-
-&quot;description&quot;: null,
-
-&quot;image&quot;: null,
-
-&quot;portionsAllowed&quot;: false,
-
-&quot;defaultSizeId&quot;: null,
-
-&quot;maxNumIngredients&quot;: 0,
-
-&quot;sizes&quot;: null,
-
-&quot;defaultIngredients&quot;: null,
-
-&quot;productBaseSizes&quot;: null
-
-}
-
-]
-
-}
-
-]
-
-},
-
-{
-
-&quot;categoryId&quot;: &quot;999990004923100&quot;,
-
-&quot;name&quot;: &quot;Bebidas&quot;,
-
-&quot;description&quot;: &quot;&quot;,
-
-&quot;subcategories&quot;: [
-
-{
-
-&quot;subcategoryId&quot;: &quot;999990004922538&quot;,
-
-&quot;name&quot;: &quot;Refrescos 500 ml&quot;,
-
-&quot;products&quot;: [
-
-{
-
-&quot;productId&quot;: &quot;999990001261600&quot;,
-
-&quot;name&quot;: &quot;Botella Coca-Cola (500ml)&quot;,
-
-&quot;description&quot;: null,
-
-&quot;image&quot;: null,
-
-&quot;portionsAllowed&quot;: false,
-
-&quot;defaultSizeId&quot;: null,
-
-&quot;maxNumIngredients&quot;: 0,
-
-&quot;sizes&quot;: [
-
-{
-
-&quot;sizeId&quot;: &quot;35&quot;,
-
-&quot;name&quot;: &quot;50cl&quot;,
-
-&quot;price&quot;: 1.95
-
-}
-
-],
-
-&quot;defaultIngredients&quot;: null,
-
-&quot;productBaseSizes&quot;: null
-
-}
-
-]
-
-}
-
-]
-
-},
-
-{
-
-&quot;categoryId&quot;: &quot;999990004923110&quot;,
-
-&quot;name&quot;: &quot;Hamburguesas&quot;,
-
-&quot;description&quot;: &quot;El bocado perfecto&quot;,
-
-&quot;subcategories&quot;: [
-
-{
-
-&quot;subcategoryId&quot;: &quot;999990004923634&quot;,
-
-&quot;name&quot;: &quot;Hamburguesas&quot;,
-
-&quot;products&quot;: [
-
-{
-
-&quot;productId&quot;: &quot;999990006381900&quot;,
-
-&quot;name&quot;: &quot;Nueva Top Burguer Vacuno&quot;,
-
-&quot;description&quot;: null,
-
-&quot;image&quot;: null,
-
-&quot;portionsAllowed&quot;: false,
-
-&quot;defaultSizeId&quot;: null,
-
-&quot;maxNumIngredients&quot;: 0,
-
-&quot;sizes&quot;: [
-
-{
-
-&quot;sizeId&quot;: &quot;4883062663&quot;,
-
-&quot;name&quot;: &quot;Individual&quot;,
-
-&quot;price&quot;: 4.95000029
-
-}
-
-],
-
-&quot;defaultIngredients&quot;: null,
-
-&quot;productBaseSizes&quot;: null
-
-}
-
-]
-
-}
-
-]
-
-}
-
-]
-
-}
-
-GET /catalogue/shop/{ShopId}/{DeliveryType}
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span> 
+  <span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span> 
+<span class="hll">	<span class="p">{</span> 
+</span>	  <span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923100&quot;</span><span class="p">,</span> 
+<span class="hll">	  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizzas&quot;</span><span class="p">,</span> 
+</span>	  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span> 
+		<span class="p">{</span> 
+		  <span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922538&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Las Clásicas&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006710&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizza Barbacoa&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Masa fresca, bacon, pollo, topping a base de mozzarella, salsa barbacoa y doble de carne de vacuno.&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pequeña&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">14.95</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Mediana&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">20.95</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;21&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Familiar&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">27.95</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;36&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Strómboli&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">20.95</span> 
+				<span class="p">}</span> 
+			  <span class="p">],</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="p">[</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005361675&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;SALSA BARBACOA&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/sbpr.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 1&quot;</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000005700&quot;</span><span class="p">,</span>                   
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;BASE CLÁSICA&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/base.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 2&quot;</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005369717&quot;</span><span class="p">,</span>                   
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Con Topping&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/moze.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000004466&quot;</span><span class="p">,</span>                   
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Carne de vacuno&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990005436200&quot;</span><span class="p">,</span>
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bacon&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span> 
+				<span class="p">},</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;ingredientId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000004543&quot;</span><span class="p">,</span>
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pollo marinado&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;http://triton.telepizza.es/app/5.0/es/images/ingredients/</span><span class="si">{density}</span><span class="s2">/ca.jpg&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;groupDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Group 3&quot;</span> 
+				<span class="p">}</span> 
+			  <span class="p">],</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="p">[</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006710&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;allowedSizes&quot;</span><span class="p">:</span> <span class="p">[</span> 
+					<span class="s2">&quot;36&quot;</span><span class="p">,</span> 
+					<span class="s2">&quot;20&quot;</span> 
+				  <span class="p">]</span> 
+				<span class="p">}</span> 
+			  <span class="p">]</span> 
+			<span class="p">},</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000013106&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pizza Carbonara&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span> 
+			<span class="p">}</span> 
+		  <span class="p">]</span> 
+		<span class="p">},</span> 
+		<span class="p">{</span> 
+		  <span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922500&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Las Destacadas&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990000006814&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;A tu gusto&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span> 
+			<span class="p">},</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990010533500&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Telepizza Sweet&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span> 
+			<span class="p">}</span> 
+		  <span class="p">]</span> 
+		<span class="p">}</span> 
+	  <span class="p">]</span> 
+	<span class="p">},</span> 
+	<span class="p">{</span> 
+	  <span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923100&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bebidas&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span> 
+		<span class="p">{</span> 
+		  <span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004922538&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Refrescos 500 ml&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990001261600&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Botella Coca-Cola (500ml)&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;35&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;50cl&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">1.95</span> 
+				<span class="p">}</span> 
+			  <span class="p">],</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span> 
+			<span class="p">}</span> 
+		  <span class="p">]</span> 
+		<span class="p">}</span> 
+	  <span class="p">]</span> 
+	<span class="p">},</span> 
+	<span class="p">{</span> 
+	  <span class="s2">&quot;categoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923110&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hamburguesas&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;El bocado perfecto&quot;</span><span class="p">,</span> 
+	  <span class="s2">&quot;subcategories&quot;</span><span class="p">:</span> <span class="p">[</span> 
+		<span class="p">{</span> 
+		  <span class="s2">&quot;subcategoryId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990004923634&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hamburguesas&quot;</span><span class="p">,</span> 
+		  <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span> 
+			<span class="p">{</span> 
+			  <span class="s2">&quot;productId&quot;</span><span class="p">:</span> <span class="s2">&quot;999990006381900&quot;</span><span class="p">,</span>               
+			  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Nueva Top Burguer Vacuno&quot;</span><span class="p">,</span> 
+			  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;portionsAllowed&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> 
+			  <span class="s2">&quot;defaultSizeId&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;maxNumIngredients&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+			  <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="p">[</span> 
+				<span class="p">{</span> 
+				  <span class="s2">&quot;sizeId&quot;</span><span class="p">:</span> <span class="s2">&quot;4883062663&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Individual&quot;</span><span class="p">,</span> 
+				  <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">4.95000029</span> 
+				<span class="p">}</span> 
+			  <span class="p">],</span> 
+			  <span class="s2">&quot;defaultIngredients&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span> 
+			  <span class="s2">&quot;productBaseSizes&quot;</span><span class="p">:</span> <span class="n">null</span> 
+			<span class="p">}</span> 
+		  <span class="p">]</span> 
+		<span class="p">}</span> 
+	  <span class="p">]</span> 
+	<span class="p">}</span> 
+  <span class="p">]</span> 
+<span class="p">}</span> 
 </pre></div>
-</div>
+</td></tr></table></div>
+<p>GET /catalogue/shop/{ShopId}/{DeliveryType}</p>
 <p>Esta llamada se encarga de comenzar un pedido de un kiosco, obteniendo
 en su respuesta el catálogo correspondiente,</p>
 <blockquote>
@@ -1171,7 +1244,7 @@ tienda.</p>
 </ul>
 <p>GET /catalogue/shop/{shopId}/product/{productId}/choices</p>
 <div class="section" id="obtener-los-ingredientes-elegibles-para-un-producto">
-<h3>7.1 Obtener los ingredientes elegibles para un producto<a class="headerlink" href="#obtener-los-ingredientes-elegibles-para-un-producto" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>7.1 Obtener los ingredientes elegibles para un producto<a class="headerlink" href="#obtener-los-ingredientes-elegibles-para-un-producto" title="Permalink to this headline">¶</a></h3>
 <p>GET /catalogue/shop/{shopId}/product/{productId}/choices</p>
 <p>Permite obtener todos los ingredientes que se pueden añadir o elegir
 para componer un producto compuesto a partir del identificador del
@@ -1513,7 +1586,7 @@ total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:</p>
 </div>
 </div>
 <div class="section" id="creacion-del-pedido">
-<h2>8. CREACIÓN DEL PEDIDO<a class="headerlink" href="#creacion-del-pedido" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>8. CREACIÓN DEL PEDIDO<a class="headerlink" href="#creacion-del-pedido" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>POST /order/create</p>
 </div></blockquote>
@@ -1598,7 +1671,7 @@ promociones.</p>
 respuesta “204 – NoContent”).</p>
 </div>
 <div class="section" id="anadir-un-producto">
-<h2>9. AÑADIR UN PRODUCTO<a class="headerlink" href="#anadir-un-producto" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>9. AÑADIR UN PRODUCTO<a class="headerlink" href="#anadir-un-producto" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>POST /order/product</p>
 </div></blockquote>
@@ -2014,7 +2087,7 @@ todos los productos que se han añadido hasta el momento.</p>
 <p>}</p>
 </div>
 <div class="section" id="establecer-una-direccion-de-entrega">
-<h2>10. ESTABLECER UNA DIRECCIÓN DE ENTREGA<a class="headerlink" href="#establecer-una-direccion-de-entrega" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>10. ESTABLECER UNA DIRECCIÓN DE ENTREGA<a class="headerlink" href="#establecer-una-direccion-de-entrega" title="Permalink to this headline">¶</a></h2>
 <p>Para establecer una dirección de entrega, es necesario hacer dos
 llamadas a los siguientes endpoints:</p>
 <blockquote>
@@ -2477,7 +2550,7 @@ en curso.</p>
 </div>
 </div>
 <div class="section" id="obtener-medios-de-pago">
-<h2>11. OBTENER MEDIOS DE PAGO<a class="headerlink" href="#obtener-medios-de-pago" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>11. OBTENER MEDIOS DE PAGO<a class="headerlink" href="#obtener-medios-de-pago" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>GET /shop/{id}/payments</p>
 </div></blockquote>
@@ -2641,7 +2714,7 @@ para pasar un True o False respectivamente.</p></li>
 </div>
 </div>
 <div class="section" id="finalizar-pedido">
-<h2>12. FINALIZAR PEDIDO<a class="headerlink" href="#finalizar-pedido" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>12. FINALIZAR PEDIDO<a class="headerlink" href="#finalizar-pedido" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>POST /order/save</p>
 <p>POST /order/savelocal</p>
@@ -2762,12 +2835,21 @@ reparto.</p>
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../data_lake/plantilla_documentacion_Fomento_uso_app_v02.html" class="btn btn-neutral float-right" title="JOURNEY - Fomento Uso App" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../orderflow/orderflow_2.html" class="btn btn-neutral float-left" title="ORDER CREATION FLOW" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Thorvaldur Konradsson
+        &copy; Copyright 2019, TLPZ
 
     </p>
   </div>
