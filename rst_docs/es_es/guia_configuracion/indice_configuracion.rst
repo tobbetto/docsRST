@@ -1,4 +1,6 @@
-﻿===================================
+﻿.. centered:: |image1|
+
+===================================
 GUIA DE CONFIGURACIÓN E INSTALACIÓN
 ===================================
 
@@ -30,8 +32,14 @@ Arranque del sistema
 
 8. Procedimiento de instalación
 
+.. _my-reference-label:
+
 Verificación del proceso de Instalación
 =======================================
 
 Marcha atrás del sistema
 ========================
+
+.. |image1| image:: media/imagedocumentation.PNG
+   :width: 1.84732in
+   :height: 0.49308in

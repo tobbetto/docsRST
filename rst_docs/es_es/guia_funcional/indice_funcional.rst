@@ -1,6 +1,8 @@
-﻿===============
+﻿.. centered:: |image1|
+
+==============
 GUIA FUNCIONAL
-===============
+==============
 
 Tiene como objetivo facilitar la tarea de conocimiento, uso y
 aprendizaje del sistema desarrollado. Debe contener información acerca
@@ -50,9 +52,7 @@ Resumen de procesos del sistema
 
 -  Procesos del framework
 
-Ejemplo:
-
-.. code-block:: json
+..
 
    Capítulo 1. Acceder a Billing
 
@@ -62,9 +62,12 @@ Ejemplo:
 
    Capítulo 4. Informes
 
-Interfaces del sistema 
-=======================
+Interfaces del sistema
 
 11. Back-end
 
 12. Front-end
+
+.. |image1| image:: media/imagedocumentation.PNG
+   :width: 1.84732in
+   :height: 0.49308in

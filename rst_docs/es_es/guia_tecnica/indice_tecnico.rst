@@ -1,4 +1,6 @@
-﻿============
+﻿.. centered:: |image88|
+
+============
 GUIA TÉCNICA
 ============
 
@@ -51,3 +53,7 @@ Componentes SW
 11. Estructura SW
 
 12. Algoritmos y librerías básicas
+
+.. |image88| image:: media/imagedocumentation.PNG
+   :width: 1.84732in
+   :height: 0.49308in

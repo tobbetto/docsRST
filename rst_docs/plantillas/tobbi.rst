@@ -1,10 +1,8 @@
-﻿|image0|
-
-=========================
+﻿=========================
 TITULO DEL DOCUMENTO AQUÍ
 =========================
 
-|Imagen que contiene interior Descripción generada automáticamente|
+.. centered:: |image0|
 
 ========================================= =======================================================================
 Fecha: Poner aquí fecha de actualización. Área responsable: Poner aquí nombre del área responsable del documento.
@@ -44,6 +42,9 @@ Fecha: Poner aquí fecha de actualización. Área responsable: Poner aquí nombr
 
 `9. PRIMER NIVEL DE TÍTULO: Codificación soportes visuales.
 5 <#primer-nivel-de-título-codificación-soportes-visuales.>`__
+
+`10. PRIMER NIVEL DE TÍTULO: Glosario.
+7 <#primer-nivel-de-título-glosario.>`__
 
 1. PRIMER NIVEL DE TITULO 1: Uso de títulos 
 ============================================
@@ -129,7 +130,7 @@ Texto        Texto        Texto
 Escribir aquí el nombre del archivo de la imagen. (Ver punto 9 de esta
 guía).
 
-|image2|
+|image1|
 
 7. PRIMER NIVEL DE TÍTULO: Introducción de vídeos
 =================================================
@@ -151,7 +152,7 @@ la carpeta de cada línea.
 Se deberán crear tres carpetas dentro de la propia línea con el nombre
 de los tipos de guía.
 
-|image3| `PULSA AQUÍ PARA ACCEDER A
+|image2| `PULSA AQUÍ PARA ACCEDER A
 TEAMS <https://teams.microsoft.com/_#/files/General?threadId=19%3A0a33ef7156d643578c4ec542aa082504%40thread.skype&ctx=channel&context=CROSS%252FAcademy%252FDocumentacion%2520de%2520Gestion%252FRepositorio%2520Documental>`__
 
 Se nombrarán de la siguiente manera:
@@ -181,6 +182,7 @@ Línea Panel de Control       PANEL
 Línea Interfaz People        IPEOP
 Línea Interfaz Financiera    IFINA
 Línea Seguridad              SEGUR
+Línea Academy                ACAD
 ========================= ===============
 
 Codificación según guía:
@@ -188,6 +190,7 @@ Codificación según guía:
 ===================== ===============
 Guia                     Nomenclatura
 ===================== ===============
+Introducción             IN
 Guia técnica             GT
 Guia funcional           GF
 Guia de configuración    GC
@@ -212,7 +215,7 @@ Se incluirán en Word las imágenes y las tablas. Estas, junto con los
 vídeos, deben ir guardados en una carpeta creada en Teams **dentro de
 cada una de las líneas con el nombre de “Soportes visuales”**:
 
-|image4| `PULSA AQUÍ PARA ACCEDER A
+|image3| `PULSA AQUÍ PARA ACCEDER A
 TEAMS <https://teams.microsoft.com/_#/files/General?threadId=19%3A0a33ef7156d643578c4ec542aa082504%40thread.skype&ctx=channel&context=CROSS%252FAcademy%252FDocumentacion%2520de%2520Gestion%252FRepositorio%2520Documental>`__
 
 Se nombrarán de la siguiente manera:
@@ -247,6 +250,7 @@ Línea Panel de Control       PANEL
 Línea Interfaz People        IPEOP
 Línea Interfaz Financiera    IFINA
 Línea Seguridad              SEGUR
+Línea Academy                ACAD
 ========================= ===============
 
 Codificación según guía:
@@ -254,6 +258,7 @@ Codificación según guía:
 ===================== ===============
 Guia                     Nomenclatura
 ===================== ===============
+Introducción             IN
 Guia técnica             GT
 Guia funcional           GF
 Guia de configuración    GC
@@ -283,7 +288,7 @@ Vídeo     V
 
    Ejemplo:
 
-|image5|
+|image4|
 
 .. code-block:: json
 
@@ -292,21 +297,35 @@ Vídeo     V
 
    BILLIGT3.08.01.I001
 
-.. |image0| image:: media/image1.png
-   :width: 2.11806in
-   :height: 0.99586in
-.. |Imagen que contiene interior Descripción generada automáticamente| image:: media/image2.PNG
-   :width: 6.49024in
-   :height: 1.31944in
-.. |image2| image:: media/image3.jpg
+10. PRIMER NIVEL DE TÍTULO: Glosario.
+=====================================
+
+   En el glosario se hará una recopilación de términos y conceptos con
+   sus correspondientes definiciones para facilitar la comprensión de la
+   información mostrada en el documento.
+
+   Se recopilarán las palabras en una tabla con dos columnas:
+
+======== =============
+Concepto    Definición
+======== =============
+\       
+\       
+\       
+======== =============
+
+.. |image0| image:: media/imageproducto.png
+   :width: 3.13333in
+   :height: 2.27361in
+.. |image1| image:: media/image2.jpg
    :width: 6.22778in
    :height: 2.40278in
-.. |image3| image:: media/image4.png
+.. |image2| image:: media/image3.png
+   :width: 0.44792in
+   :height: 0.36458in
+.. |image3| image:: media/image3.png
    :width: 0.44792in
    :height: 0.36458in
 .. |image4| image:: media/image4.png
-   :width: 0.44792in
-   :height: 0.36458in
-.. |image5| image:: media/image5.png
    :width: 3.31128in
    :height: 3.67327in

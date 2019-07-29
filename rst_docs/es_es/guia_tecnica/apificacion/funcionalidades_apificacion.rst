@@ -1,14 +1,20 @@
-﻿|image0|
+﻿.. centered:: |image0|
 
 =========================
 FUNCIONALIDAD APIFICACIÓN
 =========================
 
-`1. INTRODUCCIÓN 5 <#introduccion>`__
+========================== =======================================================================
+Fecha: 24 de julio de 2019 Área responsable: Poner aquí nombre del área responsable del documento.
+========================== =======================================================================
 
-`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO <#flujo-de-creacion-de-pedido-basico>`__
+`1. INTRODUCCIÓN 5 <#introducción>`__
 
-`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO <#flujo-de-creacion-de-un-pedido-de-kiosco>`__
+`2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
+5 <#flujo-de-creacion-de-pedido-basico>`__
+
+`3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
+6 <#flujo-de-creacion-de-un-pedido-de-kiosco>`__
 
 `4. INICIO DE PEDIDO 6 <#inicio-de-pedido>`__
 
@@ -18,13 +24,15 @@ FUNCIONALIDAD APIFICACIÓN
 
 `7. OBTENER CATÁLOGO 10 <#obtener-catalogo>`__
 
-`7.1 Obtener los ingredientes elegibles para un producto <#obtener-los-ingredientes-elegibles-para-un-producto>`__
+`7.1 Obtener los ingredientes elegibles para un producto
+15 <#obtener-los-ingredientes-elegibles-para-un-producto>`__
 
 `8. CREACIÓN DEL PEDIDO 21 <#creacion-del-pedido>`__
 
 `9. AÑADIR UN PRODUCTO 22 <#añadir-un-producto>`__
 
-`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA <#establecer-una-direccion-de-entrega>`__
+`10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
+26 <#establecer-una-direccion-de-entrega>`__
 
 `11. OBTENER MEDIOS DE PAGO 29 <#obtener-medios-de-pago>`__
 
@@ -333,12 +341,6 @@ a esa localización, o para la tienda indicada.
 
    Ejemplo de respuesta:
 
-.. literalinclude:: ../../../code_docs/johnny.json
-   :lines: 1-22
-   :emphasize-lines: 3,5
-   :linenos:
-
-
 .. code-block:: json
 
    {
@@ -414,6 +416,8 @@ podrán haber definidos diferentes tamaños del producto elegibles del
 listado, ingredientes por defecto de cada producto (podrán ser añadidos)
 y diferentes tamaños de masa también elegibles, entre otros campos.
 
+|image3|
+
 ======================== ================================================================================================================================================== ==================================================================================================
 \                        **PRODUCTO**                                                                                                                                      
 ======================== ================================================================================================================================================== ==================================================================================================
@@ -434,17 +438,439 @@ y diferentes tamaños de masa también elegibles, entre otros campos.
                             “Integral” o “QuadRoller”)                                                                                                                     
 ======================== ================================================================================================================================================== ==================================================================================================
 
+..
 
    Ejemplo de respuesta:
 
+.. code-block:: json
 
-.. literalinclude:: ../../../code_docs/johnny.json
-   :lines: 26-236
-   :emphasize-lines: 3,5
-   :linenos:
+   {
 
+   "categories": [
 
-GET /catalogue/shop/{ShopId}/{DeliveryType}
+   {
+
+   "categoryId": "999990004923100",
+
+   "name": "Pizzas",
+
+   "description": "",
+
+   "subcategories": [
+
+   {
+
+   "subcategoryId": "999990004922538",
+
+   "name": "Las Clásicas",
+
+   "products": [
+
+   {
+
+   "productId": "999990000006710",
+
+   "name": "Pizza Barbacoa",
+
+   "description": "Masa fresca, bacon, pollo, topping a base de
+   mozzarella, salsa barbacoa y doble de carne de vacuno.",
+
+   "image":
+   "http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png",
+
+   "portionsAllowed": true,
+
+   "defaultSizeId": "20",
+
+   "maxNumIngredients": 1,
+
+   "sizes": [
+
+   {
+
+   "sizeId": "16",
+
+   "name": "Pequeña",
+
+   "price": 14.95
+
+   },
+
+   {
+
+   "sizeId": "20",
+
+   "name": "Mediana",
+
+   "price": 20.95
+
+   },
+
+   {
+
+   "sizeId": "21",
+
+   "name": "Familiar",
+
+   "price": 27.95
+
+   },
+
+   {
+
+   "sizeId": "36",
+
+   "name": "Strómboli",
+
+   "price": 20.95
+
+   }
+
+   ],
+
+   "defaultIngredients": [
+
+   {
+
+   "ingredientId": "999990005361675",
+
+   "name": "SALSA BARBACOA",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbpr.jpg",
+
+   "quantity": 1,
+
+   "groupId": "1",
+
+   "groupDescription": "Group 1"
+
+   },
+
+   {
+
+   "ingredientId": "999990000005700", "name": "BASE CLÁSICA",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/base.jpg",
+
+   "quantity": 1,
+
+   "groupId": "2",
+
+   "groupDescription": "Group 2"
+
+   },
+
+   {
+
+   "ingredientId": "999990005369717", "name": "Con Topping",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/moze.jpg",
+
+   "quantity": 1,
+
+   "groupId": "3",
+
+   "groupDescription": "Group 3"
+
+   },
+
+   {
+
+   "ingredientId": "999990000004466", "name": "Carne de vacuno",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
+
+   "quantity": 1,
+
+   "groupId": "3",
+
+   "groupDescription": "Group 3"
+
+   },
+
+   {
+
+   "ingredientId": "999990005436200", "name": "Bacon",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
+
+   "quantity": 1,
+
+   "groupId": "3",
+
+   "groupDescription": "Group 3"
+
+   },
+
+   {
+
+   "ingredientId": "999990000004543", "name": "Pollo marinado",
+
+   "image":
+
+   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
+
+   "quantity": 1,
+
+   "groupId": "3",
+
+   "groupDescription": "Group 3"
+
+   }
+
+   ],
+
+   "productBaseSizes": [
+
+   {
+
+   "productId": "999990000006710",
+
+   "allowedSizes": [
+
+   "36",
+
+   "20"
+
+   ]
+
+   }
+
+   ]
+
+   },
+
+   {
+
+   "productId": "999990000013106",
+
+   "name": "Pizza Carbonara",
+
+   "description": null,
+
+   "image": null,
+
+   "portionsAllowed": false,
+
+   "defaultSizeId": null,
+
+   "maxNumIngredients": 0,
+
+   "sizes": null,
+
+   "defaultIngredients": null,
+
+   "productBaseSizes": null
+
+   }
+
+   ]
+
+   },
+
+   {
+
+   "subcategoryId": "999990004922500",
+
+   "name": "Las Destacadas",
+
+   "products": [
+
+   {
+
+   "productId": "999990000006814",
+
+   "name": "A tu gusto",
+
+   "description": null,
+
+   "image": null,
+
+   "portionsAllowed": false,
+
+   "defaultSizeId": null,
+
+   "maxNumIngredients": 0,
+
+   "sizes": null,
+
+   "defaultIngredients": null,
+
+   "productBaseSizes": null
+
+   },
+
+   {
+
+   "productId": "999990010533500",
+
+   "name": "Telepizza Sweet",
+
+   "description": null,
+
+   "image": null,
+
+   "portionsAllowed": false,
+
+   "defaultSizeId": null,
+
+   "maxNumIngredients": 0,
+
+   "sizes": null,
+
+   "defaultIngredients": null,
+
+   "productBaseSizes": null
+
+   }
+
+   ]
+
+   }
+
+   ]
+
+   },
+
+   {
+
+   "categoryId": "999990004923100",
+
+   "name": "Bebidas",
+
+   "description": "",
+
+   "subcategories": [
+
+   {
+
+   "subcategoryId": "999990004922538",
+
+   "name": "Refrescos 500 ml",
+
+   "products": [
+
+   {
+
+   "productId": "999990001261600",
+
+   "name": "Botella Coca-Cola (500ml)",
+
+   "description": null,
+
+   "image": null,
+
+   "portionsAllowed": false,
+
+   "defaultSizeId": null,
+
+   "maxNumIngredients": 0,
+
+   "sizes": [
+
+   {
+
+   "sizeId": "35",
+
+   "name": "50cl",
+
+   "price": 1.95
+
+   }
+
+   ],
+
+   "defaultIngredients": null,
+
+   "productBaseSizes": null
+
+   }
+
+   ]
+
+   }
+
+   ]
+
+   },
+
+   {
+
+   "categoryId": "999990004923110",
+
+   "name": "Hamburguesas",
+
+   "description": "El bocado perfecto",
+
+   "subcategories": [
+
+   {
+
+   "subcategoryId": "999990004923634",
+
+   "name": "Hamburguesas",
+
+   "products": [
+
+   {
+
+   "productId": "999990006381900",
+
+   "name": "Nueva Top Burguer Vacuno",
+
+   "description": null,
+
+   "image": null,
+
+   "portionsAllowed": false,
+
+   "defaultSizeId": null,
+
+   "maxNumIngredients": 0,
+
+   "sizes": [
+
+   {
+
+   "sizeId": "4883062663",
+
+   "name": "Individual",
+
+   "price": 4.95000029
+
+   }
+
+   ],
+
+   "defaultIngredients": null,
+
+   "productBaseSizes": null
+
+   }
+
+   ]
+
+   }
+
+   ]
+
+   }
+
+   ]
+
+   }
+
+   GET /catalogue/shop/{ShopId}/{DeliveryType}
 
 Esta llamada se encarga de comenzar un pedido de un kiosco, obteniendo
 en su respuesta el catálogo correspondiente,
@@ -512,7 +938,7 @@ Esta agrupación se podrá utilizar para mostrar en pantalla la
 información de estos ingredientes en listados seleccionables u otros
 contenedores:
 
-|image3|
+|image4|
 
 Por ejemplo, si el campo mínimo de ingredientes viene informado con un 0
 y el de máximo de ingredientes con valor 1, se correspondería con un
@@ -530,9 +956,9 @@ máximo con valor 8, implica que son ingredientes opcionales, y como
 máximo se podrán añadir 8 ingredientes en total, 8 del mismo tipo u 8 en
 total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:
 
-|image4|
-
 |image5|
+
+|image6|
 
    Ejemplo de respuesta:
 
@@ -1779,19 +2205,22 @@ reparto.
 
    }
 
-.. |image0| image:: media/image1.png
-   :width: 3.07874in
-   :height: 0.81102in
+.. |image0| image:: media/imageapificacion.png
+   :width: 1.28171in
+   :height: 1.55556in
 .. |image1| image:: media/image2.png
    :width: 6.19375in
 .. |image2| image:: media/image2.png
    :width: 6.19375in
-.. |image3| image:: media/image3.jpg
+.. |image3| image:: media/image3.emf
+   :width: 3.89394in
+   :height: 2.35625in
+.. |image4| image:: media/image4.jpg
    :width: 5.04744in
    :height: 2.44044in
-.. |image4| image:: media/image4.jpg
+.. |image5| image:: media/image5.jpg
    :width: 5.06944in
    :height: 1.59028in
-.. |image5| image:: media/image5.jpg
+.. |image6| image:: media/image6.jpg
    :width: 6.29097in
    :height: 4.19722in
