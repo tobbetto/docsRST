@@ -13,7 +13,7 @@ Bienvenidos a la documentación del futuro!
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Introducción:
+   :caption: PRODUCTO:
 
    rst_docs/es_es/Welcome/acceso_plataforma_gtu
  
