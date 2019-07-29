@@ -1,6 +1,7 @@
 ﻿=====================
 ACCESO PLATAFORMA GTU
 =====================
+
 .. centered:: |image0|
 
 .. centered:: `ACCEDE A GTU <https://grupotelepizzauniversity.telepizza.com/my/>`__
@@ -26,7 +27,7 @@ VÍDEO <https://www.youtube.com/embed/MhBF9sxOeVc>`__
 |image2| `PULSA AQUÍ PARA VER EL
 VÍDEO <https://www.youtube.com/embed/dxukbrffOFA>`__
 
-.. |image0| image:: media/image1.png
+.. |image0| image:: media/gtu_logo.png
    :width: 3.30208in
    :height: 3.09236in
 .. |image1| image:: media/image100.png

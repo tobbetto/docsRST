@@ -1,16 +1,14 @@
-﻿|image0|
+﻿.. centered:: |image0|
 
 =========================
 JOURNEY - Fomento Uso App
 =========================
 
-|Imagen que contiene interior Descripción generada automáticamente|
-
 ========================== =======================================================================
-Fecha: 24 de julio de 2019 Área responsable: Poner aquí nombre del área responsable del documento.
+Fecha: 24 de julio de 2019 Área responsable: Data Lake
 ========================== =======================================================================
 
-1. INTRODUCCIÓN 1
+`1. INTRODUCCIÓN 1 <#introduccion>`__
 
 `2. DESARROLLO 2 <#desarrollo>`__
 
@@ -72,9 +70,10 @@ Extensions > Journeys > Fomento Uso App”:
 
 2.2 Automation
 ==============
-
-|image2|\ Automation Builder es la herramienta que ejecuta actividades
+Automation Builder es la herramienta que ejecuta actividades
 de gestión de datos y marketing de forma automática.
+
+|image1| 
 
 Se ha creado un Automation en la ruta “my automations > Journey Builder
 Automations > Fomento Uso App”, con los siguientes pasos:
@@ -358,7 +357,7 @@ capacidad de respuesta.
 
 El Journey se ha generado con el siguiente modelo:
 
-|image3|
+|image2|
 
 Se han aplicado las siguientes configuraciones:
 
@@ -370,27 +369,28 @@ Se han aplicado las siguientes configuraciones:
 
 -  Fichas:
 
-   -  |image4|\ Decision Split
+   -  Decision Split
+
+..
+
+   |image3|
 
    -  Einstein STO
 
-   -  Email: Creatividades “UsoApp0719 - TM 10”, ” UsoApp0719 … TM
-      10-15”, “UsoApp0719 - TM 15”
+   -  Email: Creatividades “UsoApp0719 - TM 10”, ” UsoApp0719 … TM 10-15”,
+   “UsoApp0719 - TM 15”
 
    -  Wait By Duration: 1days
 
 .. |image0| image:: media/image1.png
-   :width: 2.11806in
-   :height: 0.99586in
-.. |Imagen que contiene interior Descripción generada automáticamente| image:: media/image2.PNG
-   :width: 6.49024in
-   :height: 1.31944in
-.. |image2| image:: media/image3.png
+   :width: 1.27778in
+   :height: 1.63383in
+.. |image1| image:: media/image2.png
    :width: 6.52778in
    :height: 5.16757in
-.. |image3| image:: media/image4.png
+.. |image2| image:: media/image3.png
    :width: 5.31489in
    :height: 5.50926in
-.. |image4| image:: media/image5.png
+.. |image3| image:: media/image4.png
    :width: 3.77569in
    :height: 2.49583in
