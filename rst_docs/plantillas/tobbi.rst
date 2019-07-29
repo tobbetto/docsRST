@@ -202,7 +202,7 @@ Guia de configuración    GC
 
 .. code-block:: json
 
-   BILLIGF20190723
+BILLIGF20190723
 
 9. PRIMER NIVEL DE TÍTULO: Codificación soportes visuales.
 ==========================================================
@@ -295,7 +295,7 @@ Vídeo     V
    La nomenclatura de una imagen que corresponde a datos internos de una
    guía técnica de la línea de Billing será:
 
-   BILLIGT3.08.01.I001
+BILLIGT3.08.01.I001
 
 10. PRIMER NIVEL DE TÍTULO: Glosario.
 =====================================

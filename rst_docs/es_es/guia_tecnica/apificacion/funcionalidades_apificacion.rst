@@ -11,28 +11,28 @@ Fecha: 24 de julio de 2019 Área responsable: Poner aquí nombre del área respo
 `1. INTRODUCCIÓN 5 <#introducción>`__
 
 `2. FLUJO DE CREACIÓN DE PEDIDO BÁSICO
-5 <#flujo-de-creacion-de-pedido-basico>`__
+5 <#flujo-de-creación-de-pedido-básico>`__
 
 `3. FLUJO DE CREACIÓN DE UN PEDIDO DE KIOSCO
-6 <#flujo-de-creacion-de-un-pedido-de-kiosco>`__
+6 <#flujo-de-creación-de-un-pedido-de-kiosco>`__
 
 `4. INICIO DE PEDIDO 6 <#inicio-de-pedido>`__
 
-`5. TIENDAS POR LOCALIZACIÓN 8 <#tiendas-por-localizacion>`__
+`5. TIENDAS POR LOCALIZACIÓN 8 <#tiendas-por-localización>`__
 
 `6. HORAS DISPONIBLES 9 <#horas-disponibles>`__
 
-`7. OBTENER CATÁLOGO 10 <#obtener-catalogo>`__
+`7. OBTENER CATÁLOGO 10 <#obtener-catálogo>`__
 
 `7.1 Obtener los ingredientes elegibles para un producto
 15 <#obtener-los-ingredientes-elegibles-para-un-producto>`__
 
-`8. CREACIÓN DEL PEDIDO 21 <#creacion-del-pedido>`__
+`8. CREACIÓN DEL PEDIDO 21 <#creación-del-pedido>`__
 
 `9. AÑADIR UN PRODUCTO 22 <#añadir-un-producto>`__
 
 `10. ESTABLECER UNA DIRECCIÓN DE ENTREGA
-26 <#establecer-una-direccion-de-entrega>`__
+26 <#establecer-una-dirección-de-entrega>`__
 
 `11. OBTENER MEDIOS DE PAGO 29 <#obtener-medios-de-pago>`__
 
@@ -69,11 +69,15 @@ concreto:
 
 -  Token e inicio de pedido
 
-POST /connect/token
+..
+
+   POST /connect/token
 
 -  Obtener tiendas por localización (a recoger)
 
-GET /shop/location/{lat}/{lng}
+..
+
+   GET /shop/location/{lat}/{lng}
 
 -  Obtener horas disponibles
 
@@ -186,22 +190,9 @@ de tiempo y dentro del ámbito del pedido en curso.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   {
-
-   "access_token":
-
-   "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn
-   0.eyJuYmYiOjE1NTYxMDE0ODQsImV4cCI6MTU1NjEwNTA4NCwiaXNzIjoiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20iLCJhdWQiOlsiaHR0cDovL2FwaS1zZXJ2aWNlcy5kZXYuYXdzLnRlbGVwaXp6YS5jb20vcmVzb3VyY2VzIiwiQUxMIl0sImNsaWVudF9pZCI6InRweiIsImp0aSI6IjUiLCJzY29wZSI6WyJBTEwiXX0.Q9bsxA6syMb1h3eTzRd
-   oG-kJlnFLP3V3P7o0r5Xlvp3FBQY7mSX832sD-TSW288aTWYERHL50drl-QFD1VNVOFt0NG5drQuNFK4j8hnIUfu8NyMTF6fVPc_voi6SlEpZ5hfwdky1TWBbQYSL0rZgc1-Gz3sDuyU7XPo7x1_ISj8DXikYDSp7v6LcFTNR-Iz8NKCsLMvLjHs8WpkOFgFw9SlFOTYPJC7ns6O03ZZovaG2rEFLGAkZ2FAtEkMpekqiKd9TVCiKODdGFc2YRC9hdjKvb0q2
-   s0Qrd4sYRMp7pJVNw51ZIGR0WQ6Osz92sUo1EG69DyJGBNerUSQuhunJVw",
-
-   "expires_in": 3600,
-
-   "token_type": "Bearer"
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 1-6
+   :linenos:
 
 5. TIENDAS POR LOCALIZACIÓN 
 ============================
@@ -235,71 +226,9 @@ utilizará en consultas posteriores, junto con la dirección de la tienda
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   [
-
-   {
-
-   "shopId": "00145",
-
-   "addresss": "Gertrudis Gómez de Avellaneda",
-
-   "city": "ZARAGOZA",
-
-   "province": "ZARAGOZA"
-
-   },
-
-   {
-
-   "shopId": "00306",
-
-   "addresss": "Sobrarbe 43",
-
-   "city": "ZARAGOZA",
-
-   "province": "ZARAGOZA"
-
-   },
-
-   {
-
-   "shopId": "00859",
-
-   "addresss": "Plaza del Pilar 14",
-
-   "city": "ZARAGOZA",
-
-   "province": "ZARAGOZA"
-
-   },
-
-   {
-
-   "shopId": "00374",
-
-   "addresss": "Paseo María Agustín 9",
-
-   "city": "ZARAGOZA",
-
-   "province": "ZARAGOZA"
-
-   },
-
-   {
-
-   "shopId": "00834",
-
-   "addresss": "Avenida de Madrid 198",
-
-   "city": "ZARAGOZA",
-
-   "province": "ZARAGOZA"
-
-   }
-
-   ]
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 7-38
+   :linenos:
 
 6. HORAS DISPONIBLES 
 =====================
@@ -341,55 +270,9 @@ a esa localización, o para la tienda indicada.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   {
-
-   "availableHours": [
-
-   "2019-05-27T19:05:00Z",
-
-   "2019-05-27T19:20:00Z",
-
-   "2019-05-27T19:35:00Z",
-
-   "2019-05-27T19:50:00Z",
-
-   "2019-05-27T20:05:00Z",
-
-   "2019-05-27T20:20:00Z",
-
-   "2019-05-27T20:35:00Z",
-
-   "2019-05-27T20:50:00Z",
-
-   "2019-05-27T21:05:00Z",
-
-   "2019-05-27T21:20:00Z",
-
-   "2019-05-27T21:35:00Z",
-
-   "2019-05-27T21:50:00Z",
-
-   "2019-05-27T22:05:00Z",
-
-   "2019-05-27T22:20:00Z",
-
-   "2019-05-27T22:35:00Z",
-
-   "2019-05-27T22:50:00Z",
-
-   "2019-05-27T23:05:00Z",
-
-   "2019-05-27T23:20:00Z",
-
-   "2019-05-27T23:35:00Z"
-
-   ],
-
-   "waitTime": 0
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 40-63
+   :linenos:
 
 7. OBTENER CATÁLOGO 
 ====================
@@ -442,435 +325,12 @@ y diferentes tamaños de masa también elegibles, entre otros campos.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 66-277
+   :linenos:
 
-   {
 
-   "categories": [
-
-   {
-
-   "categoryId": "999990004923100",
-
-   "name": "Pizzas",
-
-   "description": "",
-
-   "subcategories": [
-
-   {
-
-   "subcategoryId": "999990004922538",
-
-   "name": "Las Clásicas",
-
-   "products": [
-
-   {
-
-   "productId": "999990000006710",
-
-   "name": "Pizza Barbacoa",
-
-   "description": "Masa fresca, bacon, pollo, topping a base de
-   mozzarella, salsa barbacoa y doble de carne de vacuno.",
-
-   "image":
-   "http://triton.telepizza.es/nvol/es/content/productos/pbbq_d.png",
-
-   "portionsAllowed": true,
-
-   "defaultSizeId": "20",
-
-   "maxNumIngredients": 1,
-
-   "sizes": [
-
-   {
-
-   "sizeId": "16",
-
-   "name": "Pequeña",
-
-   "price": 14.95
-
-   },
-
-   {
-
-   "sizeId": "20",
-
-   "name": "Mediana",
-
-   "price": 20.95
-
-   },
-
-   {
-
-   "sizeId": "21",
-
-   "name": "Familiar",
-
-   "price": 27.95
-
-   },
-
-   {
-
-   "sizeId": "36",
-
-   "name": "Strómboli",
-
-   "price": 20.95
-
-   }
-
-   ],
-
-   "defaultIngredients": [
-
-   {
-
-   "ingredientId": "999990005361675",
-
-   "name": "SALSA BARBACOA",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbpr.jpg",
-
-   "quantity": 1,
-
-   "groupId": "1",
-
-   "groupDescription": "Group 1"
-
-   },
-
-   {
-
-   "ingredientId": "999990000005700", "name": "BASE CLÁSICA",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/base.jpg",
-
-   "quantity": 1,
-
-   "groupId": "2",
-
-   "groupDescription": "Group 2"
-
-   },
-
-   {
-
-   "ingredientId": "999990005369717", "name": "Con Topping",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/moze.jpg",
-
-   "quantity": 1,
-
-   "groupId": "3",
-
-   "groupDescription": "Group 3"
-
-   },
-
-   {
-
-   "ingredientId": "999990000004466", "name": "Carne de vacuno",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
-
-   "quantity": 1,
-
-   "groupId": "3",
-
-   "groupDescription": "Group 3"
-
-   },
-
-   {
-
-   "ingredientId": "999990005436200", "name": "Bacon",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
-
-   "quantity": 1,
-
-   "groupId": "3",
-
-   "groupDescription": "Group 3"
-
-   },
-
-   {
-
-   "ingredientId": "999990000004543", "name": "Pollo marinado",
-
-   "image":
-
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/ca.jpg",
-
-   "quantity": 1,
-
-   "groupId": "3",
-
-   "groupDescription": "Group 3"
-
-   }
-
-   ],
-
-   "productBaseSizes": [
-
-   {
-
-   "productId": "999990000006710",
-
-   "allowedSizes": [
-
-   "36",
-
-   "20"
-
-   ]
-
-   }
-
-   ]
-
-   },
-
-   {
-
-   "productId": "999990000013106",
-
-   "name": "Pizza Carbonara",
-
-   "description": null,
-
-   "image": null,
-
-   "portionsAllowed": false,
-
-   "defaultSizeId": null,
-
-   "maxNumIngredients": 0,
-
-   "sizes": null,
-
-   "defaultIngredients": null,
-
-   "productBaseSizes": null
-
-   }
-
-   ]
-
-   },
-
-   {
-
-   "subcategoryId": "999990004922500",
-
-   "name": "Las Destacadas",
-
-   "products": [
-
-   {
-
-   "productId": "999990000006814",
-
-   "name": "A tu gusto",
-
-   "description": null,
-
-   "image": null,
-
-   "portionsAllowed": false,
-
-   "defaultSizeId": null,
-
-   "maxNumIngredients": 0,
-
-   "sizes": null,
-
-   "defaultIngredients": null,
-
-   "productBaseSizes": null
-
-   },
-
-   {
-
-   "productId": "999990010533500",
-
-   "name": "Telepizza Sweet",
-
-   "description": null,
-
-   "image": null,
-
-   "portionsAllowed": false,
-
-   "defaultSizeId": null,
-
-   "maxNumIngredients": 0,
-
-   "sizes": null,
-
-   "defaultIngredients": null,
-
-   "productBaseSizes": null
-
-   }
-
-   ]
-
-   }
-
-   ]
-
-   },
-
-   {
-
-   "categoryId": "999990004923100",
-
-   "name": "Bebidas",
-
-   "description": "",
-
-   "subcategories": [
-
-   {
-
-   "subcategoryId": "999990004922538",
-
-   "name": "Refrescos 500 ml",
-
-   "products": [
-
-   {
-
-   "productId": "999990001261600",
-
-   "name": "Botella Coca-Cola (500ml)",
-
-   "description": null,
-
-   "image": null,
-
-   "portionsAllowed": false,
-
-   "defaultSizeId": null,
-
-   "maxNumIngredients": 0,
-
-   "sizes": [
-
-   {
-
-   "sizeId": "35",
-
-   "name": "50cl",
-
-   "price": 1.95
-
-   }
-
-   ],
-
-   "defaultIngredients": null,
-
-   "productBaseSizes": null
-
-   }
-
-   ]
-
-   }
-
-   ]
-
-   },
-
-   {
-
-   "categoryId": "999990004923110",
-
-   "name": "Hamburguesas",
-
-   "description": "El bocado perfecto",
-
-   "subcategories": [
-
-   {
-
-   "subcategoryId": "999990004923634",
-
-   "name": "Hamburguesas",
-
-   "products": [
-
-   {
-
-   "productId": "999990006381900",
-
-   "name": "Nueva Top Burguer Vacuno",
-
-   "description": null,
-
-   "image": null,
-
-   "portionsAllowed": false,
-
-   "defaultSizeId": null,
-
-   "maxNumIngredients": 0,
-
-   "sizes": [
-
-   {
-
-   "sizeId": "4883062663",
-
-   "name": "Individual",
-
-   "price": 4.95000029
-
-   }
-
-   ],
-
-   "defaultIngredients": null,
-
-   "productBaseSizes": null
-
-   }
-
-   ]
-
-   }
-
-   ]
-
-   }
-
-   ]
-
-   }
-
-   GET /catalogue/shop/{ShopId}/{DeliveryType}
+GET /catalogue/shop/{ShopId}/{DeliveryType}
 
 Esta llamada se encarga de comenzar un pedido de un kiosco, obteniendo
 en su respuesta el catálogo correspondiente,
@@ -962,278 +422,9 @@ total de todos ellos. Por ejemplo, el listado de ingredientes siguiente:
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   [
-
-   {
-
-   "productId": "999990000006710",
-
-   "groupId": "5147621549",
-
-   "sizeId": "16",
-
-   "name": "SALSAS",
-
-   "description": "SALSAS",
-
-   "groupMinQuantity": 1,
-
-   "groupMaxQuantity": 1,
-
-   "minPerIngredient": 1,
-
-   "maxPerIngredient": 1,
-
-   "ingredients": [
-
-   {
-
-   "ingredientId": "999990005362717",
-
-   "description": "SALSA BBQ CREME DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sbc.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005363000",
-
-   "description": "SALSA BARBACOA CRÉME",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbcr.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005361909",
-
-   "description": "SALSA BARBACOA DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sba.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005361675",
-
-   "description": "SALSA BARBACOA",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbpr.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005362799",
-
-   "description": "SALSA BURGER DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sbg.jpg"
-
-   },
-
-   {
-
-   "ingredientId": "999990005363136",
-
-   "description": "SALSA BURGER",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/sbrg.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005363775",
-
-   "description": "SALSA CARBONARA DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sca.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005363361",
-
-   "description": "SALSA CARBONARA",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/scae.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005363943",
-
-   "description": "SALSA JALISCO DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sja.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005364413",
-
-   "description": "SALSA JALISCO",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/saje.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005367124",
-
-   "description": "SALSA TOMATE Y ORÉGANO DOBLE",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/2sto.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005365052",
-
-   "description": "SALSA TOMATE Y ORÉGANO",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/tome.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990002148797",
-
-   "description": "SIN SALSA",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/0sal.jpg"
-   }
-
-   ]
-
-   },
-
-   {
-
-   "productId": "999990000006710",
-
-   "groupId": "4940394233", "sizeId": "16",
-
-   "name": "¿ALGÚN EXTRA?",
-
-   "description": "¿ALGÚN EXTRA?",
-
-   "groupMinQuantity": 1,
-
-   "groupMaxQuantity": 1,
-
-   "minPerIngredient": 1,
-
-   "maxPerIngredient": 1,
-
-   "ingredients": [
-
-   {
-
-   "ingredientId": "999990005630501",
-
-   "description": "--",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/0is.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005360500",
-
-   "description": "EXTRA BARBACOA",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/exso.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005363540",
-
-   "description": "SALSA CÉSAR (Después de Horno)",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/scep.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005364597",
-
-   "description": "SALSA STEAK & GRILL",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/stg.jpg"
-   },
-
-   {
-
-   "ingredientId": "999990005360849",
-
-   "description": "EXTRA TOMATE CONFITADO",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/extc.jpg"
-   }
-
-   ]
-
-   },
-
-   {
-
-   "productId": "999990000006710",
-
-   "groupId": "5228699519",
-
-   "sizeId": "16",
-
-   "name": "¿LA QUIERES GRATINAR?",
-
-   "description": "¿LA QUIERES GRATINAR?",
-
-   "groupMinQuantity": 0,
-
-   "groupMaxQuantity": 1,
-
-   "minPerIngredient": 1,
-
-   "maxPerIngredient": 1,
-
-   "ingredients": [
-
-   {
-
-   "ingredientId": "999990002554800",
-
-   "description": "Gratinado (PVP 2 ingr.)",
-
-   "image":
-   "http://triton.telepizza.es/app/5.0/es/images/ingredients/{density}/grat.jpg"
-   }
-
-   ]
-
-   }
-
-]
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 280-396
+   :linenos:
 
 8. CREACIÓN DEL PEDIDO 
 =======================
@@ -1340,300 +531,18 @@ también otros ingredientes que se pueden ir agregando según una lista.
 
    Ejemplo de parámetros de entrada:
 
-.. code-block:: json
-
-   {
-
-   "products": [
-
-   {
-
-   "name": "Bacon Crispy Gourmet",
-
-   "description": "",
-
-   "partialproductid": "999990010908732",
-
-   "choices": [
-
-   {
-
-   "choiceid": "999990005263746",
-
-   "name": "BASE FINA"
-
-   },
-
-   {
-
-   "choiceid": "999990010517817",
-
-   "name": "5 Quesos Gourmet"
-
-   },
-
-   {
-
-   "choiceid": "999990006472065",
-
-   "name": "Fina masa"
-
-   },
-
-   {
-
-   "choiceid": "999990010429777",
-
-   "name": "Salsa Barbacoa"
-
-   },
-
-   {
-
-   "choiceid": "999990010902209",
-
-   "name": "Topping a Base de Mozzarella"
-
-   },
-
-   {
-
-   "choiceid": "999990010905260",
-
-   "name": "Bacon"
-
-   },
-
-   {
-
-   "choiceid": "999990010902269",
-
-   "name": "Bacon Crispy"
-
-   }
-
-   ]
-
-   }
-
-   ],
-
-   "size": 20,
-
-   "units": 2
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 398-438
+   :linenos:
 
 La respuesta de esta llamada devolverá el pedido actual completo con
 todos los productos que se han añadido hasta el momento.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   {
-
-   "customerEmail": null,
-
-   "deliveryOrder": null,
-
-   "cartDto": {
-
-   "products": [
-
-   {
-
-   "products": [
-
-   {
-
-   "name": "Bacon Crispy Gourmet",
-
-   "description": "Si eres fan del bacon, aquí tienes ración doble:
-   ahumado y crispy.
-
-   Una sabrosa mezcla acompañada por nuestra tradicional salsa barbacoa
-   y la doble masa rellena de 5 quesos.",
-
-   "partialProductId": "999990010908732",
-
-   "choices": [
-
-   {
-
-   "choiceId": "999990005263746",
-
-   "name": "BASE FINA BFP"
-
-   },
-
-   {
-
-   "choiceId": "999990010517817",
-
-   "name": "5 Quesos Gourmet"
-
-   },
-
-   {
-
-   "choiceId": "999990006472065",
-
-   "name": "Fina masa"
-
-   },
-
-   {
-
-   "choiceId": "999990010429777",
-
-   "name": "Salsa Barbacoa"
-
-   },
-
-   {
-
-   "choiceId": "999990010902209",
-
-   "name": "Topping a Base de Mozzarella"
-
-   },
-
-   {
-
-   "choiceId": "999990010905260",
-
-   "name": "Bacon"
-
-   },
-
-   {
-
-   "choiceId": "999990010902269",
-
-   "name": "Bacon Crispy"
-
-   }
-
-   ]
-
-   }
-
-   ],
-
-   "size": 0,
-
-   "units": 1,
-
-   "price": 23,
-
-   "productLineId": 1
-
-   },
-
-   {
-
-   "products": [
-
-   {
-
-   "name": "Bacon Crispy Gourmet",
-
-   "description": "Si eres fan del bacon, aquí tienes ración doble:
-   ahumado y crispy.
-
-   Una sabrosa mezcla acompañada por nuestra tradicional salsa barbacoa
-   y la doble masa rellena de 5 quesos.",
-
-   "partialProductId": "999990010908732",
-
-   "choices": [
-
-   {
-
-   "choiceId": "999990005263746",
-
-   "name": "BASE FINA BFP"
-
-   },
-
-   {
-
-   "choiceId": "999990010517817",
-
-   "name": "5 Quesos Gourmet"
-
-   },
-
-   {
-
-   "choiceId": "999990006472065",
-
-   "name": "Fina masa"
-
-   },
-
-   {
-
-   "choiceId": "999990010429777",
-
-   "name": "Salsa Barbacoa"
-
-   },
-
-   {
-
-   "choiceId": "999990010902209",
-
-   "name": "Topping a Base de Mozzarella"
-
-   },
-
-   {
-
-   "choiceId": "999990010905260",
-
-   "name": "Bacon"
-
-   },
-
-   {
-
-   "choiceId": "999990010902269",
-
-   "name": "Bacon Crispy"
-
-   }
-
-   ]
-
-   }
-
-   ],
-
-   "size": 0,
-
-   "units": 1,
-
-   "price": 23,
-
-   "productLineId": 2
-
-   }
-
-   ],
-
-   "originalPrice": 45.9,
-
-   "totalPrice": 45.9,
-
-   "promotions": []
-
-   },
-
-   "creationDate": "0001-01-01T00:00:00"
-
-}
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 440-540
+   :linenos:
 
 10. ESTABLECER UNA DIRECCIÓN DE ENTREGA 
 ========================================
@@ -1681,131 +590,12 @@ establecer la dirección de entrega.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 542-602
+   :linenos:
 
-   {
 
-   "primaryField": [
-
-   {
-
-   "key": "county",
-
-   "label": "Provincia",
-
-   "value": "ZARAGOZA",
-
-   "editable": false,
-
-   "maxLength": -1
-
-   },
-
-   {
-
-   "key": "city",
-
-   "label": "Localidad",
-
-   "value": "ZARAGOZA",
-
-   "editable": false,
-
-   "maxLength": -1
-
-   },
-
-   {
-
-   "key": "street",
-
-   "label": "Nombre de vía",
-
-   "value": "CALLE JULIO CORTAZAR",
-
-   "editable": true,
-
-   "maxLength": -1
-
-   },
-
-   {
-
-   "key": "house_number",
-
-   "label": "Número",
-
-   "value": "19",
-
-   "editable": true,
-
-   "maxLength": -1
-
-   }
-
-   ],
-
-   "secondaryField": [
-
-   {
-
-   "key": null,
-
-   "label": "Bloque",
-
-   "value": null,
-
-   "editable": true,
-
-   "maxLength": 5
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Escalera",
-
-   "value": null,
-
-   "editable": true,
-
-   "maxLength": 3
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Piso",
-
-   "value": null,
-
-   "editable": true,
-
-   "maxLength": 3
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Puerta",
-
-   "value": null,
-
-   "editable": true,
-
-   "maxLength": 3
-
-   }
-
-   ] }
-
-   POST /order/delivery
+POST /order/delivery
 
 Esta llamada se encarga de establecer una dirección de entrega al pedido
 en curso.
@@ -1848,137 +638,9 @@ en curso.
 
 Ejemplo de parámetros de entrada:
 
-.. code-block:: json
-
-   {
-
-   "Phone": "943546576",
-
-   "deliveryObservations": "Sin observaciones",
-
-   "address": {
-
-   "primaryfield": [
-
-   {
-
-   "key": "county",
-
-   "label": "Provincia",
-
-   "value": "ZARAGOZA",
-
-   "editable": false,
-
-   "max_length": -1
-
-   },
-
-   {
-
-   "key": "city",
-
-   "label": "Localidad",
-
-   "value": "ZARAGOZA",
-
-   "editable": false,
-
-   "max_length": -1
-
-   },
-
-   {
-
-   "key": "street",
-
-   "label": "Nombre de vía",
-
-   "value": "CALLE EMILIA PARDO BAZAN", "editable": true,
-
-   "max_length": -1
-
-   },
-
-   {
-
-   "key": "house_number",
-
-   "label": "Número",
-
-   "value": "22",
-
-   "editable": true,
-
-   "max_length": -1
-
-   }
-
-   ],
-
-   "secondaryfield": [
-
-   {
-
-   "key": null,
-
-   "label": "Bloque",
-
-   "value": "1",
-
-   "editable": true,
-
-   "max_length": 5
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Escalera",
-
-   "value": "3",
-
-   "editable": true,
-
-   "max_length": 3
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Piso",
-
-   "value": "5",
-
-   "editable": true,
-
-   "max_length": 3
-
-   },
-
-   {
-
-   "key": null,
-
-   "label": "Puerta",
-
-   "value": "D",
-
-   "editable": true,
-
-   "max_length": 3
-
-   }
-
-   ]
-
-   }
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 605-670
+   :linenos:
 
 11. OBTENER MEDIOS DE PAGO 
 ===========================
@@ -2065,47 +727,9 @@ cada uno, son:
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   [
-
-   {
-
-   "electronicPaymentId": "1",
-
-   "paymentTypeName": "Efectivo Euros",
-
-   "changeEfective": [
-
-   10,
-
-   20,
-
-   30,
-
-   40
-
-   ],
-
-   "isExternalPayment": false,
-
-   "tokenType": 0
-
-   },
-
-   {
-
-   "electronicPaymentId": "2",
-
-   "paymentTypeName": "Tarjeta",
-
-   "changeEfective": null,
-
-   "isExternalPayment": false,
-
-   "tokenType": 0
-
-   } ]
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 671-690
+   :linenos:
 
 12. FINALIZAR PEDIDO 
 =====================
@@ -2156,21 +780,9 @@ kiosco) realizando el pago mediante el medio de pago en concreto.
 
    Ejemplo de parámetros de entrada:
 
-.. code-block:: json
-
-   {
-
-   "paymentType": 1,
-
-   "digitCard": null,
-
-   "token": null,
-
-   "clientcash": 50,
-
-   "OrderObservations": "Sin observaciones"
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+  :lines: 692-698
+  :linenos:
 
 La respuesta al grabar el pedido contendrá la información de la tienda
 que suministra los productos, los datos relevantes de la dirección de
@@ -2179,31 +791,9 @@ reparto.
 
    Ejemplo de respuesta:
 
-.. code-block:: json
-
-   {
-
-   "orderId": "12",
-
-   "deliveryNoteId": "501",
-
-   "address": "",
-
-   "shopAddress": "Virgen de Aranzazu 33",
-
-   "orderObservations": "Sin observaciones",
-
-   "totalPrice": 20.95,
-
-   "deliveryCost": 12.3,
-
-   "email": "marcelino@pan.vino",
-
-   "deliveryTime": "2019-04-25T16:45:34.6696507+00:00",
-
-   "shopPhone": "914544567"
-
-   }
+.. literalinclude:: codigo/codigo_apificacion.txt
+   :lines: 700-711
+   :linenos:
 
 .. |image0| image:: media/imageapificacion.png
    :width: 1.28171in
