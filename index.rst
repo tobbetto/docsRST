@@ -15,9 +15,11 @@ Bienvenidos a la documentación del futuro!
    :hidden:
    :caption: PRODUCTO:
 
-   rst_docs/es_es/Welcome/acceso_plataforma_gtu
    rst_docs/es_es/producto/intro_producto_billing
- 
+   
+..   rst_docs/es_es/Welcome/acceso_plataforma_gtu
+   
+
 .. toctree::
    :maxdepth: 1
    :hidden:
@@ -58,53 +60,6 @@ Bienvenidos a la documentación del futuro!
    rst_docs/es_es/glosario/glosario_es
 
 
-.. code-block:: c
-
-	/* Or say "highlight::" once to set the language for all of the
-	code blocks that follow it. Options include ":linenos:",
-	":linenothreshold:", and ":emphasize-lines: 1,2,3". */
-	
-	char s[] = "You can also say 'python', 'ruby', ..., or 'guess'!";
-
-.. literalinclude:: example.py
-   :lines: 10-20
-   :linenos:
-   
-.. literalinclude:: index.rst
-   :lines: 79-85
-   :emphasize-lines: 3,5
-   :linenos:
-   
-.. index::
-   single: funcion; johnny()
- 
-.. literalinclude:: johnny.json
-   :lines: 1-211
-   :emphasize-lines: 3,5
-   :linenos:
-
-Examples:
-
-.. epigraph::
-
-	No matter where you go, there you are.
-	
-	-- Buckaroo Banzai
-		
-		
-.. compound::
-
-   The 'rm' command is very dangerous.  If you are logged
-   in as root and enter ::
-
-       cd /
-       rm -rf *
-
-   you will erase the entire contents of your file system.
-   
-Link:
-
-see :ref:`my-reference-label`
 
 .. note::
 
@@ -126,19 +81,6 @@ see :ref:`my-reference-label`
    `GUIA FUNCIONAL <rst_docs/es_es/guia_funcional/indice_funcional/>`_
       Documentation for tar archive files, including GNU tar extensions.
 
-.. versionadded:: 2.5
-   The *spam* parameter.
-	  
-.. centered:: **LICENSE AGREEMENT**
-
-.. hlist::
-   :columns: 3
-
-   * A list of
-   * short items
-   * that should be
-   * displayed
-   * horizontally
 
 .. index:: 
    single: función; some_function()
@@ -151,12 +93,7 @@ see :ref:`my-reference-label`
        print 'This line is highlighted.'
        print 'This one is not...'
        print '...but this one is.'
-	   
-.. code-block:: python
-   :caption: this.py
-   :name: this-py
 
-   print 'Explicit is better than implicit.'
    
 .. glossary::
 
@@ -173,35 +110,7 @@ see :ref:`my-reference-label`
 .. codeauthor:: Thorvaldur Konradsson <thorvaldurk@vectoritcgroup.com>
 
 
-.. list-table:: Frozen Delights!
-   :widths: 15 10 30
-   :header-rows: 1
-
-   * - Treat
-     - Quantity
-     - Description
-   * - Albatross
-     - 2.99
-     - On a stick!
-   * - Crunchy Frog
-     - 1.49
-     - If we took the bones out, it wouldn't be
-       crunchy, now would it?
-   * - Gannet Ripple
-     - 1.99
-     - On a stick!
-	 
-
-.. csv-table:: Frozen Delights!
-   :header: "Treat", "Quantity", "Description"
-   :widths: 15, 10, 30
-
-   "Albatross", 2.99, "On a stick!"
-   "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
-   crunchy, now would it?"
-   "Gannet Ripple", 1.99, "On a stick!"
-
-Indices and tables
+Indices y tablas
 ==================
 
 * :ref:`genindex`
@@ -210,20 +119,16 @@ Indices and tables
 
 .. |guia_funcional| image:: images/index/guia_funcional.png
    :target: rst_docs/es_es/guia_funcional/index_func.html
-   :width: 130px
-   :height: 86px
+   :width: 24%
 .. |guia_tecnica| image:: images/index/guia_tecnica.png
    :target: rst_docs/es_es/guia_tecnica/indice_tecnico.html
-   :width: 130px
-   :height: 86px
+   :width: 24%
 .. |guia_configuracion| image:: images/index/guia_configuracion.png
    :target: rst_docs/es_es/guia_configuracion/indice_configuracion.html
-   :width: 130px
-   :height: 86px
+   :width: 24%
 .. |gtu| image:: images/index/gtu.png
    :target: https://grupotelepizzauniversity.telepizza.com/
-   :width: 130px
-   :height: 86px
+   :width: 24%
 
 .. index::
    single: función; codeauthor

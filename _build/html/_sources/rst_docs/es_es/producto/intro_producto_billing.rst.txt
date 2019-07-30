@@ -4,7 +4,9 @@ Producto
 
 .. centered:: |image0|
 
+===================== =================================
 Revisión: 29-jul-2019 Equipo Block Academy Telepizza
+===================== =================================
 
 Este producto se muestra como ejemplo de como quedará estructurada la
 documentación de los diferentes productos que componen la suite
@@ -42,11 +44,20 @@ documentación que estén o puedan estar en uso.
 
 **DOCUMENTACIÓN DE REFERENCIA**
 
+|guia_funcional| |guia_tecnica| |guia_configuracion| |gtu|
 
-- `GUIA FUNCIONAL <../../../rst_docs/es_es/guia_funcional/indice_funcional.html>`_
-- `GUIA DE DESARROLLO <../../../rst_docs/es_es/guia_tecnica/indice_tecnico.html>`_
-- `GUIA DE CONFIGURACIÓN <../../../rst_docs/es_es/guia_configuracion/indice_configuracion.html>`_
-- `GLOSARIO <../../../rst_docs/es_es/glosario/glosario_es.html>`_
+.. |guia_funcional| image:: ../../../images/index/guia_funcional.png
+   :target: https://docsrst.readthedocs.io/es/latest/rst_docs/es_es/guia_funcional/indice_funcional.html
+   :width: 24%
+.. |guia_tecnica| image:: ../../../images/index/guia_tecnica.png
+   :target: https://docsrst.readthedocs.io/es/latest/rst_docs/es_es/guia_tecnica/indice_tecnico.html
+   :width: 24%
+.. |guia_configuracion| image:: ../../../images/index/guia_configuracion.png
+   :target: https://docsrst.readthedocs.io/es/latest/rst_docs/es_es/guia_configuracion/indice_configuracion.html
+   :width: 24%
+.. |gtu| image:: ../../../images/index/gtu.png
+   :target: https://grupotelepizzauniversity.telepizza.com/
+   :width: 24%
 
 .. |image0| image:: media/image1.png
    :width: 50%
