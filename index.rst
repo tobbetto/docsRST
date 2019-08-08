@@ -15,7 +15,7 @@ Bienvenidos a la documentación del futuro!
    :hidden:
    :caption: Introducción:
 
-   rst_docs/es_es/Welcome/acceso_plataforma_gtu
+   rst_docs/es_es/producto/intro_producto_billing
  
 .. toctree::
    :maxdepth: 1
