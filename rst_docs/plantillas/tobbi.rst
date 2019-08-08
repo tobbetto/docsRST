@@ -18,7 +18,7 @@ Fecha: Poner aquí fecha de actualización. Área responsable: Poner aquí nombr
 
 `1.1.3 Tercer nivel 3: 2 <#tercer-nivel-3-2>`__
 
-`2. PRIMER NIVEL DE TITULO 1: Uso de viñetas 2 <#primer-nivel-de-titulo-1-uso-de-viñetas>`__
+`2. PRIMER NIVEL DE TITULO 1: Uso de viñetas 2 <#primer-nivel-de-titulo-1-uso-de-vinetas>`__
 
 `3. PRIMER NIVEL DE TÍTULO 1: Uso de tablas 2 <#primer-nivel-de-título-1-uso-de-tablas>`__
 
