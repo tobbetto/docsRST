@@ -23,6 +23,7 @@ Bienvenidos a la documentación del futuro!
    :caption: Guía Funcional:
    
    rst_docs/es_es/guia_funcional/indice_funcional
+   rst_docs/es_es/guia_funcional/academy
  
 .. toctree::
    :maxdepth: 1
