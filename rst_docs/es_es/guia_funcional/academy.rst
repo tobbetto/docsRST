@@ -34,7 +34,7 @@ Empleo Plantillas Word
 2. Extra: De plantilla Word a Web. 
 ===================================
 
-Si quieres conocer los pasos que se realizan desde que el archivo Word con toda la información se suben en Teams hasta que se pueden visualizar con un formato más atractivo en la DMS, presta atención al siguiente vídeo:
+Si quieres conocer los pasos que se realizan desde que el archivo Word con toda la información se sube a Teams hasta que se puede visualizar con un formato más atractivo en la DMS, presta atención al siguiente vídeo:
 
 Proceso de publicación guías en DMS 
 
